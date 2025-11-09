@@ -1,0 +1,2061 @@
+{
+    "layers": [
+        {
+            "allowGeometryUpdates": true,
+            "capabilities": "Query,Editing,Create,Update,Delete",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "drawingInfo": {
+                "labelingInfo": null,
+                "renderer": {
+                    "description": "Survey Data Locations",
+                    "label": "Cibo - Pasture Biomass Collector",
+                    "symbol": {
+                        "angle": 0,
+                        "color": [
+                            255,
+                            0,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "width": 1
+                        },
+                        "size": 8,
+                        "style": "esriSMSCircle",
+                        "type": "esriSMS",
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "type": "simple"
+                },
+                "transparency": 0
+            },
+            "extent": {
+                "spatialReference": {
+                    "wkid": 4326
+                },
+                "type": "extent",
+                "xmax": 180,
+                "xmin": -180,
+                "ymax": 90,
+                "ymin": -90
+            },
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Cibo Labs - Pasture Biomass Collector",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "note_description",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Email Address",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "email_address",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Property Name",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "property_name",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Paddock Name",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "paddock_name",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Valid Record",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "Yes",
+                                "name": "Yes"
+                            },
+                            {
+                                "code": "No_Testing",
+                                "name": "No - Testing"
+                            }
+                        ],
+                        "name": "cvd_valid_record",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "valid_record",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Transect Sampling Type",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "wet_sample",
+                                "name": "Wet Weight Sample"
+                            },
+                            {
+                                "code": "dry_sample",
+                                "name": "Dry Weight Sample"
+                            },
+                            {
+                                "code": "platemeter_sample",
+                                "name": "Platemeter Sampling"
+                            }
+                        ],
+                        "name": "cvd_transect_sample_type",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "transect_sample_type",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "PLEASE SUPPLY YOUR PLATEMETER EQUATION",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "note_equation",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Equation Part - A",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "platemeter_equation_a",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Equation Part - B",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "platemeter_equation_b",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Quadrat Size",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "quadrat_025",
+                                "name": "0.25 Quadrat Used"
+                            },
+                            {
+                                "code": "quadrat_010",
+                                "name": "0.10 Quadrat Used"
+                            }
+                        ],
+                        "name": "cvd_qaudrat_size",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "qaudrat_size",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Count of Quadrat(s)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "count_quadrat",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "sum_tsdm",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "sum_tsdm",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Average TSDM (kg/Ha) for Transect",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "tsdm_kgha",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Average Pasture Height (cm)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "pasture_height_average",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Dominant Species",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "other_",
+                                "name": "Other"
+                            },
+                            {
+                                "code": "broadleaf_mix",
+                                "name": "Broadleaf Mix"
+                            },
+                            {
+                                "code": "canola",
+                                "name": "Canola"
+                            },
+                            {
+                                "code": "cereals",
+                                "name": "Cereals"
+                            },
+                            {
+                                "code": "clover",
+                                "name": "Clover"
+                            },
+                            {
+                                "code": "cocksfoot",
+                                "name": "Cocksfoot"
+                            },
+                            {
+                                "code": "fescue",
+                                "name": "Fescue"
+                            },
+                            {
+                                "code": "kikuyu",
+                                "name": "Kikuyu"
+                            },
+                            {
+                                "code": "lucerne",
+                                "name": "Lucerne"
+                            },
+                            {
+                                "code": "lucerne_mix",
+                                "name": "Lucerne Mix"
+                            },
+                            {
+                                "code": "mixed",
+                                "name": "Mixed"
+                            },
+                            {
+                                "code": "native",
+                                "name": "Native"
+                            },
+                            {
+                                "code": "phalaris",
+                                "name": "Phalaris"
+                            },
+                            {
+                                "code": "phalaris_mix",
+                                "name": "Phalaris Mix"
+                            },
+                            {
+                                "code": "rye_mix",
+                                "name": "Rye-Mix"
+                            },
+                            {
+                                "code": "vetch",
+                                "name": "Vetch"
+                            },
+                            {
+                                "code": "oats",
+                                "name": "Oats"
+                            },
+                            {
+                                "code": "ryegrass",
+                                "name": "Ryegrass"
+                            },
+                            {
+                                "code": "wheat",
+                                "name": "Wheat"
+                            },
+                            {
+                                "code": "triticale",
+                                "name": "Triticale"
+                            },
+                            {
+                                "code": "dry_clover",
+                                "name": "Dry Clover"
+                            },
+                            {
+                                "code": "medic",
+                                "name": "Medic"
+                            },
+                            {
+                                "code": "chickory",
+                                "name": "Chickory"
+                            },
+                            {
+                                "code": "broadleaf",
+                                "name": "Broadleaf"
+                            },
+                            {
+                                "code": "canola_970",
+                                "name": "Canola 970"
+                            },
+                            {
+                                "code": "annual_grasses",
+                                "name": "Annual grasses"
+                            },
+                            {
+                                "code": "italian_ryegrass",
+                                "name": "Italian Ryegrass"
+                            },
+                            {
+                                "code": "balansa_clover",
+                                "name": "Balansa Clover"
+                            },
+                            {
+                                "code": "barley_grass",
+                                "name": "Barley Grass"
+                            },
+                            {
+                                "code": "capeweed",
+                                "name": "Capeweed"
+                            },
+                            {
+                                "code": "erodium",
+                                "name": "Erodium"
+                            },
+                            {
+                                "code": "geranium",
+                                "name": "Geranium"
+                            },
+                            {
+                                "code": "hairy_panic",
+                                "name": "Hairy Panic"
+                            },
+                            {
+                                "code": "onion_weed",
+                                "name": "Onion Weed"
+                            },
+                            {
+                                "code": "pattersons_curse",
+                                "name": "Patterson�s Curse"
+                            },
+                            {
+                                "code": "perennial_ryegrass",
+                                "name": "Perennial Ryegrass"
+                            },
+                            {
+                                "code": "raddish",
+                                "name": "Raddish"
+                            },
+                            {
+                                "code": "rape",
+                                "name": "Rape"
+                            },
+                            {
+                                "code": "silver_grass",
+                                "name": "Silver Grass"
+                            },
+                            {
+                                "code": "strawberry_clover",
+                                "name": "Strawberry Clover"
+                            },
+                            {
+                                "code": "sub_clover",
+                                "name": "Sub Clover"
+                            },
+                            {
+                                "code": "tillage_raddish",
+                                "name": "Tillage Raddish"
+                            },
+                            {
+                                "code": "turnip",
+                                "name": "Turnip"
+                            },
+                            {
+                                "code": "white_clover",
+                                "name": "White Clover"
+                            },
+                            {
+                                "code": "winter_grass",
+                                "name": "Winter Grass"
+                            },
+                            {
+                                "code": "hemp",
+                                "name": "Low-THC Hemp"
+                            },
+                            {
+                                "code": "annual_sorghum",
+                                "name": "Annual sorghum"
+                            },
+                            {
+                                "code": "annual_verbine",
+                                "name": "Annual verbine"
+                            },
+                            {
+                                "code": "asbestos_grass",
+                                "name": "Asbestos grass"
+                            },
+                            {
+                                "code": "australian_drop_seed",
+                                "name": "Australian Drop Seed"
+                            },
+                            {
+                                "code": "barley",
+                                "name": "Barley"
+                            },
+                            {
+                                "code": "barley_mitchell",
+                                "name": "Barley Mitchell"
+                            },
+                            {
+                                "code": "black_spear_grass",
+                                "name": "Black spear grass"
+                            },
+                            {
+                                "code": "black_speargrass",
+                                "name": "Black speargrass"
+                            },
+                            {
+                                "code": "bladder_ketmia",
+                                "name": "Bladder ketmia"
+                            },
+                            {
+                                "code": "bluebush",
+                                "name": "Bluebush"
+                            },
+                            {
+                                "code": "bluegrass",
+                                "name": "Bluegrass"
+                            },
+                            {
+                                "code": "bottle_washer_grass",
+                                "name": "Bottle washer grass"
+                            },
+                            {
+                                "code": "brown_top",
+                                "name": "Brown top"
+                            },
+                            {
+                                "code": "buffel_grass",
+                                "name": "Buffel grass"
+                            },
+                            {
+                                "code": "bull_mitchell",
+                                "name": "Bull Mitchell"
+                            },
+                            {
+                                "code": "button_grass",
+                                "name": "Button grass"
+                            },
+                            {
+                                "code": "cida",
+                                "name": "Cida"
+                            },
+                            {
+                                "code": "comb_grass",
+                                "name": "Comb grass"
+                            },
+                            {
+                                "code": "common_joy_weed",
+                                "name": "Common joy weed"
+                            },
+                            {
+                                "code": "couch_grass",
+                                "name": "Couch grass"
+                            },
+                            {
+                                "code": "cow_vine",
+                                "name": "Cow vine"
+                            },
+                            {
+                                "code": "cup_grass",
+                                "name": "Cup grass"
+                            },
+                            {
+                                "code": "curly_bluegrass",
+                                "name": "Curly bluegrass"
+                            },
+                            {
+                                "code": "curly_mitchell",
+                                "name": "Curly Mitchell"
+                            },
+                            {
+                                "code": "downs_sorghum",
+                                "name": "Downs sorghum"
+                            },
+                            {
+                                "code": "drop_seed",
+                                "name": "Drop seed"
+                            },
+                            {
+                                "code": "fairy_grass",
+                                "name": "Fairy grass"
+                            },
+                            {
+                                "code": "feathertop",
+                                "name": "Feathertop"
+                            },
+                            {
+                                "code": "feathertop_wiregrass",
+                                "name": "Feathertop wiregrass"
+                            },
+                            {
+                                "code": "fire_grass",
+                                "name": "Fire grass"
+                            },
+                            {
+                                "code": "flemmings_bush",
+                                "name": "Flemmings bush"
+                            },
+                            {
+                                "code": "flinders_grass",
+                                "name": "Flinders grass"
+                            },
+                            {
+                                "code": "forage_sorghum",
+                                "name": "Forage sorghum"
+                            },
+                            {
+                                "code": "forbes",
+                                "name": "Forbes"
+                            },
+                            {
+                                "code": "golden_beard_grass",
+                                "name": "Golden beard grass"
+                            },
+                            {
+                                "code": "herbages",
+                                "name": "Herbages"
+                            },
+                            {
+                                "code": "hoop_mitchell",
+                                "name": "Hoop Mitchell"
+                            },
+                            {
+                                "code": "indian_couch",
+                                "name": "Indian couch"
+                            },
+                            {
+                                "code": "joyweed",
+                                "name": "Joyweed"
+                            },
+                            {
+                                "code": "kangaroo_grass",
+                                "name": "Kangaroo grass"
+                            },
+                            {
+                                "code": "kerosene_grass",
+                                "name": "Kerosene grass"
+                            },
+                            {
+                                "code": "limestone_bottlewasher",
+                                "name": "Limestone bottlewasher"
+                            },
+                            {
+                                "code": "liquiorice_bush",
+                                "name": "Liquiorice bush"
+                            },
+                            {
+                                "code": "love_grass",
+                                "name": "Love grass"
+                            },
+                            {
+                                "code": "native_couch",
+                                "name": "Native Couch"
+                            },
+                            {
+                                "code": "native_jute",
+                                "name": "Native jute"
+                            },
+                            {
+                                "code": "native_millet",
+                                "name": "Native millet"
+                            },
+                            {
+                                "code": "native_sorghum",
+                                "name": "Native sorghum"
+                            },
+                            {
+                                "code": "nut_grass",
+                                "name": "Nut grass"
+                            },
+                            {
+                                "code": "pea_bush",
+                                "name": "Pea bush"
+                            },
+                            {
+                                "code": "pepper_grass",
+                                "name": "Pepper grass"
+                            },
+                            {
+                                "code": "perennial_grass_sp",
+                                "name": "Perennial grass sp"
+                            },
+                            {
+                                "code": "pigweed",
+                                "name": "Pigweed"
+                            },
+                            {
+                                "code": "purple_joy_weed",
+                                "name": "Purple joy weed"
+                            },
+                            {
+                                "code": "qld_blue_grass",
+                                "name": "Queensland blue grass"
+                            },
+                            {
+                                "code": "ribbon_grass",
+                                "name": "Ribbon grass"
+                            },
+                            {
+                                "code": "scrubby_stylo",
+                                "name": "Scrubby Stylo"
+                            },
+                            {
+                                "code": "seca",
+                                "name": "Seca"
+                            },
+                            {
+                                "code": "sedge_grass",
+                                "name": "Sedge grass"
+                            },
+                            {
+                                "code": "sedge_sp",
+                                "name": "Sedge species"
+                            },
+                            {
+                                "code": "sida_sp",
+                                "name": "Sida species"
+                            },
+                            {
+                                "code": "silky_browntop",
+                                "name": "Silky Browntop"
+                            },
+                            {
+                                "code": "sorghum",
+                                "name": "Sorghum"
+                            },
+                            {
+                                "code": "spinifex",
+                                "name": "Spinifex"
+                            },
+                            {
+                                "code": "spurge",
+                                "name": "Spurge"
+                            },
+                            {
+                                "code": "summer_grass",
+                                "name": "Summer grass"
+                            },
+                            {
+                                "code": "sunflower_daisy",
+                                "name": "Sunflower daisy"
+                            },
+                            {
+                                "code": "tar_vine",
+                                "name": "Tar vine"
+                            },
+                            {
+                                "code": "three_awn_sp",
+                                "name": "Three awn species"
+                            },
+                            {
+                                "code": "tick_weed",
+                                "name": "Tick weed"
+                            },
+                            {
+                                "code": "unknown_species",
+                                "name": "Unknown species"
+                            },
+                            {
+                                "code": "verbine",
+                                "name": "Verbine"
+                            },
+                            {
+                                "code": "waltheria",
+                                "name": "Waltheria"
+                            },
+                            {
+                                "code": "wanderie",
+                                "name": "Wanderie"
+                            },
+                            {
+                                "code": "weeping_mitchell",
+                                "name": "Weeping Mitchell"
+                            },
+                            {
+                                "code": "whitegrass",
+                                "name": "Whitegrass"
+                            },
+                            {
+                                "code": "wild_rice",
+                                "name": "Wild rice"
+                            },
+                            {
+                                "code": "wire_grass_sp",
+                                "name": "Wire grass species"
+                            },
+                            {
+                                "code": "goathead_burr",
+                                "name": "Goathead burr"
+                            },
+                            {
+                                "code": "peach_vine",
+                                "name": "Peach vine"
+                            },
+                            {
+                                "code": "emu_foot",
+                                "name": "Emu foot"
+                            },
+                            {
+                                "code": "black_rolly_poly",
+                                "name": "Black rolly poly"
+                            },
+                            {
+                                "code": "eragrostis_spp",
+                                "name": "Eragrostis species"
+                            },
+                            {
+                                "code": "long_spine_sclerolena",
+                                "name": "Long spine sclerolena"
+                            },
+                            {
+                                "code": "soft_rolly_poly",
+                                "name": "Soft rolly poly"
+                            },
+                            {
+                                "code": "sclerolinas",
+                                "name": "Sclerolinas"
+                            },
+                            {
+                                "code": "soda_bush",
+                                "name": "Soda bush"
+                            },
+                            {
+                                "code": "sclerolena_sp",
+                                "name": "Sclerolena species"
+                            },
+                            {
+                                "code": "giathead_burr",
+                                "name": "Giathead burr"
+                            },
+                            {
+                                "code": "flathead_burr",
+                                "name": "Flathead burr"
+                            },
+                            {
+                                "code": "aristida_sp",
+                                "name": "Aristida species"
+                            },
+                            {
+                                "code": "copper_burr",
+                                "name": "Copper Burr"
+                            },
+                            {
+                                "code": "sensitive_plant",
+                                "name": "Sensitive Plant"
+                            },
+                            {
+                                "code": "ryncosia",
+                                "name": "Ryncosia"
+                            },
+                            {
+                                "code": "red_natal_sp",
+                                "name": "Red Natal species"
+                            },
+                            {
+                                "code": "creeping_blues",
+                                "name": "Creeping blues"
+                            },
+                            {
+                                "code": "rhodes_grass",
+                                "name": "Rhodes grass"
+                            },
+                            {
+                                "code": "gidgee_burr",
+                                "name": "Gidgee burr"
+                            },
+                            {
+                                "code": "black_oats",
+                                "name": "Black Oats"
+                            },
+                            {
+                                "code": "mulla_mulla",
+                                "name": "Mulla Mulla"
+                            },
+                            {
+                                "code": "galvanised_burr",
+                                "name": "Galvanised Burr"
+                            },
+                            {
+                                "code": "wooly_copper_burr",
+                                "name": "Wooly Copper burr"
+                            },
+                            {
+                                "code": "soft_rolly_polly",
+                                "name": "Sift Rolly Polly"
+                            },
+                            {
+                                "code": "silky_brown_top",
+                                "name": "Silky Brown Top"
+                            },
+                            {
+                                "code": "bluegrass_tassel",
+                                "name": "Bluegrass Tassel"
+                            },
+                            {
+                                "code": "forest_bluegrass",
+                                "name": "Forest Bluegrass"
+                            },
+                            {
+                                "code": "angleton",
+                                "name": "Angleton"
+                            },
+                            {
+                                "code": "urochloa",
+                                "name": "Urochloa"
+                            },
+                            {
+                                "code": "bisset_bluegrass",
+                                "name": "Bisset Bluegrass"
+                            },
+                            {
+                                "code": "stylo",
+                                "name": "Stylo"
+                            },
+                            {
+                                "code": "creeping_lantana",
+                                "name": "Creeping lantana"
+                            },
+                            {
+                                "code": "sabi_grass",
+                                "name": "Sabi grass"
+                            },
+                            {
+                                "code": "barbwire_grass",
+                                "name": "Barb wire grass"
+                            },
+                            {
+                                "code": "purple_pigeon",
+                                "name": "Purple pigeon"
+                            },
+                            {
+                                "code": "zig_zag_grass",
+                                "name": "Zig Zag grass"
+                            },
+                            {
+                                "code": "australian_dropseed",
+                                "name": "Australian dropseed"
+                            },
+                            {
+                                "code": "lovegrass_species",
+                                "name": "Lovegrass species"
+                            },
+                            {
+                                "code": "delicate_lovegrass",
+                                "name": "Delicate lovegrass"
+                            },
+                            {
+                                "code": "stipa_sp",
+                                "name": "Stipa species"
+                            },
+                            {
+                                "code": "mitchell_grass_sp",
+                                "name": "Mitchell Grass Species"
+                            },
+                            {
+                                "code": "native_red_grass",
+                                "name": "Red Grass"
+                            },
+                            {
+                                "code": "microleena_weeping_grass",
+                                "name": "Weeping Grass"
+                            },
+                            {
+                                "code": "native_wallaby_grass",
+                                "name": "Wallaby Grass"
+                            }
+                        ],
+                        "name": "cvd_dominant_species",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "dominant_species",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Dominant Species - Other",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "dominant_species_other",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Co-dominant Species",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "other_",
+                                "name": "Other"
+                            },
+                            {
+                                "code": "broadleaf_mix",
+                                "name": "Broadleaf Mix"
+                            },
+                            {
+                                "code": "canola",
+                                "name": "Canola"
+                            },
+                            {
+                                "code": "cereals",
+                                "name": "Cereals"
+                            },
+                            {
+                                "code": "clover",
+                                "name": "Clover"
+                            },
+                            {
+                                "code": "cocksfoot",
+                                "name": "Cocksfoot"
+                            },
+                            {
+                                "code": "fescue",
+                                "name": "Fescue"
+                            },
+                            {
+                                "code": "kikuyu",
+                                "name": "Kikuyu"
+                            },
+                            {
+                                "code": "lucerne",
+                                "name": "Lucerne"
+                            },
+                            {
+                                "code": "lucerne_mix",
+                                "name": "Lucerne Mix"
+                            },
+                            {
+                                "code": "mixed",
+                                "name": "Mixed"
+                            },
+                            {
+                                "code": "native",
+                                "name": "Native"
+                            },
+                            {
+                                "code": "phalaris",
+                                "name": "Phalaris"
+                            },
+                            {
+                                "code": "phalaris_mix",
+                                "name": "Phalaris Mix"
+                            },
+                            {
+                                "code": "rye_mix",
+                                "name": "Rye-Mix"
+                            },
+                            {
+                                "code": "vetch",
+                                "name": "Vetch"
+                            },
+                            {
+                                "code": "oats",
+                                "name": "Oats"
+                            },
+                            {
+                                "code": "ryegrass",
+                                "name": "Ryegrass"
+                            },
+                            {
+                                "code": "wheat",
+                                "name": "Wheat"
+                            },
+                            {
+                                "code": "triticale",
+                                "name": "Triticale"
+                            },
+                            {
+                                "code": "dry_clover",
+                                "name": "Dry Clover"
+                            },
+                            {
+                                "code": "medic",
+                                "name": "Medic"
+                            },
+                            {
+                                "code": "chickory",
+                                "name": "Chickory"
+                            },
+                            {
+                                "code": "broadleaf",
+                                "name": "Broadleaf"
+                            },
+                            {
+                                "code": "canola_970",
+                                "name": "Canola 970"
+                            },
+                            {
+                                "code": "annual_grasses",
+                                "name": "Annual grasses"
+                            },
+                            {
+                                "code": "italian_ryegrass",
+                                "name": "Italian Ryegrass"
+                            },
+                            {
+                                "code": "balansa_clover",
+                                "name": "Balansa Clover"
+                            },
+                            {
+                                "code": "barley_grass",
+                                "name": "Barley Grass"
+                            },
+                            {
+                                "code": "capeweed",
+                                "name": "Capeweed"
+                            },
+                            {
+                                "code": "erodium",
+                                "name": "Erodium"
+                            },
+                            {
+                                "code": "geranium",
+                                "name": "Geranium"
+                            },
+                            {
+                                "code": "hairy_panic",
+                                "name": "Hairy Panic"
+                            },
+                            {
+                                "code": "onion_weed",
+                                "name": "Onion Weed"
+                            },
+                            {
+                                "code": "pattersons_curse",
+                                "name": "Patterson�s Curse"
+                            },
+                            {
+                                "code": "perennial_ryegrass",
+                                "name": "Perennial Ryegrass"
+                            },
+                            {
+                                "code": "raddish",
+                                "name": "Raddish"
+                            },
+                            {
+                                "code": "rape",
+                                "name": "Rape"
+                            },
+                            {
+                                "code": "silver_grass",
+                                "name": "Silver Grass"
+                            },
+                            {
+                                "code": "strawberry_clover",
+                                "name": "Strawberry Clover"
+                            },
+                            {
+                                "code": "sub_clover",
+                                "name": "Sub Clover"
+                            },
+                            {
+                                "code": "tillage_raddish",
+                                "name": "Tillage Raddish"
+                            },
+                            {
+                                "code": "turnip",
+                                "name": "Turnip"
+                            },
+                            {
+                                "code": "white_clover",
+                                "name": "White Clover"
+                            },
+                            {
+                                "code": "winter_grass",
+                                "name": "Winter Grass"
+                            },
+                            {
+                                "code": "hemp",
+                                "name": "Low-THC Hemp"
+                            },
+                            {
+                                "code": "annual_sorghum",
+                                "name": "Annual sorghum"
+                            },
+                            {
+                                "code": "annual_verbine",
+                                "name": "Annual verbine"
+                            },
+                            {
+                                "code": "asbestos_grass",
+                                "name": "Asbestos grass"
+                            },
+                            {
+                                "code": "australian_drop_seed",
+                                "name": "Australian Drop Seed"
+                            },
+                            {
+                                "code": "barley",
+                                "name": "Barley"
+                            },
+                            {
+                                "code": "barley_mitchell",
+                                "name": "Barley Mitchell"
+                            },
+                            {
+                                "code": "black_spear_grass",
+                                "name": "Black spear grass"
+                            },
+                            {
+                                "code": "black_speargrass",
+                                "name": "Black speargrass"
+                            },
+                            {
+                                "code": "bladder_ketmia",
+                                "name": "Bladder ketmia"
+                            },
+                            {
+                                "code": "bluebush",
+                                "name": "Bluebush"
+                            },
+                            {
+                                "code": "bluegrass",
+                                "name": "Bluegrass"
+                            },
+                            {
+                                "code": "bottle_washer_grass",
+                                "name": "Bottle washer grass"
+                            },
+                            {
+                                "code": "brown_top",
+                                "name": "Brown top"
+                            },
+                            {
+                                "code": "buffel_grass",
+                                "name": "Buffel grass"
+                            },
+                            {
+                                "code": "bull_mitchell",
+                                "name": "Bull Mitchell"
+                            },
+                            {
+                                "code": "button_grass",
+                                "name": "Button grass"
+                            },
+                            {
+                                "code": "cida",
+                                "name": "Cida"
+                            },
+                            {
+                                "code": "comb_grass",
+                                "name": "Comb grass"
+                            },
+                            {
+                                "code": "common_joy_weed",
+                                "name": "Common joy weed"
+                            },
+                            {
+                                "code": "couch_grass",
+                                "name": "Couch grass"
+                            },
+                            {
+                                "code": "cow_vine",
+                                "name": "Cow vine"
+                            },
+                            {
+                                "code": "cup_grass",
+                                "name": "Cup grass"
+                            },
+                            {
+                                "code": "curly_bluegrass",
+                                "name": "Curly bluegrass"
+                            },
+                            {
+                                "code": "curly_mitchell",
+                                "name": "Curly Mitchell"
+                            },
+                            {
+                                "code": "downs_sorghum",
+                                "name": "Downs sorghum"
+                            },
+                            {
+                                "code": "drop_seed",
+                                "name": "Drop seed"
+                            },
+                            {
+                                "code": "fairy_grass",
+                                "name": "Fairy grass"
+                            },
+                            {
+                                "code": "feathertop",
+                                "name": "Feathertop"
+                            },
+                            {
+                                "code": "feathertop_wiregrass",
+                                "name": "Feathertop wiregrass"
+                            },
+                            {
+                                "code": "fire_grass",
+                                "name": "Fire grass"
+                            },
+                            {
+                                "code": "flemmings_bush",
+                                "name": "Flemmings bush"
+                            },
+                            {
+                                "code": "flinders_grass",
+                                "name": "Flinders grass"
+                            },
+                            {
+                                "code": "forage_sorghum",
+                                "name": "Forage sorghum"
+                            },
+                            {
+                                "code": "forbes",
+                                "name": "Forbes"
+                            },
+                            {
+                                "code": "golden_beard_grass",
+                                "name": "Golden beard grass"
+                            },
+                            {
+                                "code": "herbages",
+                                "name": "Herbages"
+                            },
+                            {
+                                "code": "hoop_mitchell",
+                                "name": "Hoop Mitchell"
+                            },
+                            {
+                                "code": "indian_couch",
+                                "name": "Indian couch"
+                            },
+                            {
+                                "code": "joyweed",
+                                "name": "Joyweed"
+                            },
+                            {
+                                "code": "kangaroo_grass",
+                                "name": "Kangaroo grass"
+                            },
+                            {
+                                "code": "kerosene_grass",
+                                "name": "Kerosene grass"
+                            },
+                            {
+                                "code": "limestone_bottlewasher",
+                                "name": "Limestone bottlewasher"
+                            },
+                            {
+                                "code": "liquiorice_bush",
+                                "name": "Liquiorice bush"
+                            },
+                            {
+                                "code": "love_grass",
+                                "name": "Love grass"
+                            },
+                            {
+                                "code": "native_couch",
+                                "name": "Native Couch"
+                            },
+                            {
+                                "code": "native_jute",
+                                "name": "Native jute"
+                            },
+                            {
+                                "code": "native_millet",
+                                "name": "Native millet"
+                            },
+                            {
+                                "code": "native_sorghum",
+                                "name": "Native sorghum"
+                            },
+                            {
+                                "code": "nut_grass",
+                                "name": "Nut grass"
+                            },
+                            {
+                                "code": "pea_bush",
+                                "name": "Pea bush"
+                            },
+                            {
+                                "code": "pepper_grass",
+                                "name": "Pepper grass"
+                            },
+                            {
+                                "code": "perennial_grass_sp",
+                                "name": "Perennial grass sp"
+                            },
+                            {
+                                "code": "pigweed",
+                                "name": "Pigweed"
+                            },
+                            {
+                                "code": "purple_joy_weed",
+                                "name": "Purple joy weed"
+                            },
+                            {
+                                "code": "qld_blue_grass",
+                                "name": "Queensland blue grass"
+                            },
+                            {
+                                "code": "ribbon_grass",
+                                "name": "Ribbon grass"
+                            },
+                            {
+                                "code": "scrubby_stylo",
+                                "name": "Scrubby Stylo"
+                            },
+                            {
+                                "code": "seca",
+                                "name": "Seca"
+                            },
+                            {
+                                "code": "sedge_grass",
+                                "name": "Sedge grass"
+                            },
+                            {
+                                "code": "sedge_sp",
+                                "name": "Sedge species"
+                            },
+                            {
+                                "code": "sida_sp",
+                                "name": "Sida species"
+                            },
+                            {
+                                "code": "silky_browntop",
+                                "name": "Silky Browntop"
+                            },
+                            {
+                                "code": "sorghum",
+                                "name": "Sorghum"
+                            },
+                            {
+                                "code": "spinifex",
+                                "name": "Spinifex"
+                            },
+                            {
+                                "code": "spurge",
+                                "name": "Spurge"
+                            },
+                            {
+                                "code": "summer_grass",
+                                "name": "Summer grass"
+                            },
+                            {
+                                "code": "sunflower_daisy",
+                                "name": "Sunflower daisy"
+                            },
+                            {
+                                "code": "tar_vine",
+                                "name": "Tar vine"
+                            },
+                            {
+                                "code": "three_awn_sp",
+                                "name": "Three awn species"
+                            },
+                            {
+                                "code": "tick_weed",
+                                "name": "Tick weed"
+                            },
+                            {
+                                "code": "unknown_species",
+                                "name": "Unknown species"
+                            },
+                            {
+                                "code": "verbine",
+                                "name": "Verbine"
+                            },
+                            {
+                                "code": "waltheria",
+                                "name": "Waltheria"
+                            },
+                            {
+                                "code": "wanderie",
+                                "name": "Wanderie"
+                            },
+                            {
+                                "code": "weeping_mitchell",
+                                "name": "Weeping Mitchell"
+                            },
+                            {
+                                "code": "whitegrass",
+                                "name": "Whitegrass"
+                            },
+                            {
+                                "code": "wild_rice",
+                                "name": "Wild rice"
+                            },
+                            {
+                                "code": "wire_grass_sp",
+                                "name": "Wire grass species"
+                            },
+                            {
+                                "code": "goathead_burr",
+                                "name": "Goathead burr"
+                            },
+                            {
+                                "code": "peach_vine",
+                                "name": "Peach vine"
+                            },
+                            {
+                                "code": "emu_foot",
+                                "name": "Emu foot"
+                            },
+                            {
+                                "code": "black_rolly_poly",
+                                "name": "Black rolly poly"
+                            },
+                            {
+                                "code": "eragrostis_spp",
+                                "name": "Eragrostis species"
+                            },
+                            {
+                                "code": "long_spine_sclerolena",
+                                "name": "Long spine sclerolena"
+                            },
+                            {
+                                "code": "soft_rolly_poly",
+                                "name": "Soft rolly poly"
+                            },
+                            {
+                                "code": "sclerolinas",
+                                "name": "Sclerolinas"
+                            },
+                            {
+                                "code": "soda_bush",
+                                "name": "Soda bush"
+                            },
+                            {
+                                "code": "sclerolena_sp",
+                                "name": "Sclerolena species"
+                            },
+                            {
+                                "code": "giathead_burr",
+                                "name": "Giathead burr"
+                            },
+                            {
+                                "code": "flathead_burr",
+                                "name": "Flathead burr"
+                            },
+                            {
+                                "code": "aristida_sp",
+                                "name": "Aristida species"
+                            },
+                            {
+                                "code": "copper_burr",
+                                "name": "Copper Burr"
+                            },
+                            {
+                                "code": "sensitive_plant",
+                                "name": "Sensitive Plant"
+                            },
+                            {
+                                "code": "ryncosia",
+                                "name": "Ryncosia"
+                            },
+                            {
+                                "code": "red_natal_sp",
+                                "name": "Red Natal species"
+                            },
+                            {
+                                "code": "creeping_blues",
+                                "name": "Creeping blues"
+                            },
+                            {
+                                "code": "rhodes_grass",
+                                "name": "Rhodes grass"
+                            },
+                            {
+                                "code": "gidgee_burr",
+                                "name": "Gidgee burr"
+                            },
+                            {
+                                "code": "black_oats",
+                                "name": "Black Oats"
+                            },
+                            {
+                                "code": "mulla_mulla",
+                                "name": "Mulla Mulla"
+                            },
+                            {
+                                "code": "galvanised_burr",
+                                "name": "Galvanised Burr"
+                            },
+                            {
+                                "code": "wooly_copper_burr",
+                                "name": "Wooly Copper burr"
+                            },
+                            {
+                                "code": "soft_rolly_polly",
+                                "name": "Sift Rolly Polly"
+                            },
+                            {
+                                "code": "silky_brown_top",
+                                "name": "Silky Brown Top"
+                            },
+                            {
+                                "code": "bluegrass_tassel",
+                                "name": "Bluegrass Tassel"
+                            },
+                            {
+                                "code": "forest_bluegrass",
+                                "name": "Forest Bluegrass"
+                            },
+                            {
+                                "code": "angleton",
+                                "name": "Angleton"
+                            },
+                            {
+                                "code": "urochloa",
+                                "name": "Urochloa"
+                            },
+                            {
+                                "code": "bisset_bluegrass",
+                                "name": "Bisset Bluegrass"
+                            },
+                            {
+                                "code": "stylo",
+                                "name": "Stylo"
+                            },
+                            {
+                                "code": "creeping_lantana",
+                                "name": "Creeping lantana"
+                            },
+                            {
+                                "code": "sabi_grass",
+                                "name": "Sabi grass"
+                            },
+                            {
+                                "code": "barbwire_grass",
+                                "name": "Barb wire grass"
+                            },
+                            {
+                                "code": "purple_pigeon",
+                                "name": "Purple pigeon"
+                            },
+                            {
+                                "code": "zig_zag_grass",
+                                "name": "Zig Zag grass"
+                            },
+                            {
+                                "code": "australian_dropseed",
+                                "name": "Australian dropseed"
+                            },
+                            {
+                                "code": "lovegrass_species",
+                                "name": "Lovegrass species"
+                            },
+                            {
+                                "code": "delicate_lovegrass",
+                                "name": "Delicate lovegrass"
+                            },
+                            {
+                                "code": "stipa_sp",
+                                "name": "Stipa species"
+                            },
+                            {
+                                "code": "mitchell_grass_sp",
+                                "name": "Mitchell Grass Species"
+                            },
+                            {
+                                "code": "native_red_grass",
+                                "name": "Red Grass"
+                            },
+                            {
+                                "code": "microleena_weeping_grass",
+                                "name": "Weeping Grass"
+                            },
+                            {
+                                "code": "native_wallaby_grass",
+                                "name": "Wallaby Grass"
+                            }
+                        ],
+                        "name": "cvd_co_dominant_species",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "co_dominant_species",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Sub-dominant Species",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "sub_dominant_species",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Unpalatable Species (%)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "unpalatable_species_",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Unpalatable 3P Species (%)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "unpalatable_3p_species_",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Average Dry Matter (%) for Transect",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "dry_matter_average",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Average Green Fraction (%)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "green_fraction_average",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Comments",
+                    "domain": null,
+                    "editable": true,
+                    "length": 1000,
+                    "name": "comments",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "CLICK THE TICK (BOTTOM RIGHT OF FORM) TO SUBMIT RECORDS",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "note_submit",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "hectare_conversion",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "hectare_conversion",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Start Time",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "start_time",
+                    "nullable": true,
+                    "type": "esriFieldTypeDate",
+                    "visible": true
+                },
+                {
+                    "alias": "Transect End Lat",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "transect_end_y",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Transect End Long",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "transect_end_x",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                }
+            ],
+            "geometryType": "esriGeometryPoint",
+            "globalIdField": "globalid",
+            "hasAttachments": true,
+            "hasM": false,
+            "hasStaticData": false,
+            "hasZ": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+            "id": 0,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "maxScale": 0,
+            "minScale": 0,
+            "name": "transect",
+            "objectIdField": "objectid",
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "templates": [
+            ],
+            "type": "Feature Layer",
+            "typeIdField": "",
+            "types": [
+            ]
+        },
+        {
+            "allowGeometryUpdates": true,
+            "capabilities": "Query,Editing,Create,Update,Delete",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "drawingInfo": {
+                "labelingInfo": null,
+                "renderer": {
+                    "description": "Survey Data Locations",
+                    "label": "Cibo - Pasture Biomass Collector",
+                    "symbol": {
+                        "angle": 0,
+                        "color": [
+                            255,
+                            0,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "width": 1
+                        },
+                        "size": 8,
+                        "style": "esriSMSCircle",
+                        "type": "esriSMS",
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "type": "simple"
+                },
+                "transparency": 0
+            },
+            "extent": {
+                "spatialReference": {
+                    "wkid": 4326
+                },
+                "type": "extent",
+                "xmax": 180,
+                "xmin": -180,
+                "ymax": 90,
+                "ymin": -90
+            },
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "NUMBER OF QUADRATS REQUIRED (MIN = 5 to MAX = 12)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "note_quadrat",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Sample Identifier",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "sample_id",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Sample Wet Weight (grams)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "sample_wet_weight_grams",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Platemeter Height (cm)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "platemeter_height_cm",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Dry Matter Percentage (%)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "dry_matter_percentage",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Sample Dry Weight (grams)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "sample_dry_weight_grams",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "TSDM (kg/Ha)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "quadrat_dmkgha",
+                    "nullable": true,
+                    "type": "esriFieldTypeDouble",
+                    "visible": true
+                },
+                {
+                    "alias": "Estimate Pasture Height (cm)",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "pasture_height_cm",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "WALK TO THE NEXT LOCATION BEFORE CLICKING '+' BUTTON",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "note_walk",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Quadrat Type",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "wet_sample",
+                                "name": "Wet Weight Sample"
+                            },
+                            {
+                                "code": "dry_sample",
+                                "name": "Dry Weight Sample"
+                            },
+                            {
+                                "code": "platemeter_sample",
+                                "name": "Platemeter Sampling"
+                            }
+                        ],
+                        "name": "cvd_qaudrat_type",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "qaudrat_type",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Quadrat Status",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "not_used",
+                                "name": "Not Using"
+                            },
+                            {
+                                "code": "ready",
+                                "name": "Ready for Calibration"
+                            }
+                        ],
+                        "name": "cvd_quadrat_status",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "quadrat_status",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "geometryType": "esriGeometryPoint",
+            "globalIdField": "globalid",
+            "hasAttachments": true,
+            "hasM": false,
+            "hasStaticData": false,
+            "hasZ": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+            "id": 1,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "maxScale": 0,
+            "minScale": 0,
+            "name": "pasture_quadrat",
+            "objectIdField": "objectid",
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "templates": [
+            ],
+            "type": "Feature Layer",
+            "typeIdField": "",
+            "types": [
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "layers": [
+        {
+            "id": 0,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "globalid",
+                    "name": "Cibo___Pasture_Biomass_Collector_pasture_quadrat",
+                    "relatedTableId": 1,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "parentglobalid",
+                    "name": "Cibo___Pasture_Biomass_Collector_pasture_quadrat",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        }
+    ]
+}

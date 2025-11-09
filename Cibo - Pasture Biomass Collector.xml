@@ -1,0 +1,4216 @@
+<?xml version="1.0"?>
+<h:html xmlns:esri="http://esri.com/xforms" xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>&lt;p&gt;Pasture Biomass Collector&lt;/p&gt;</h:title>
+    <model>
+      <submission method="form-data-post" action="https://www.arcgis.com/sharing/rest/content/items/bb20779609b0458e87730a2feff82170"/>
+      <instance>
+        <Cibo___Pasture_Biomass_Collector id="transect">
+          <note_description/>
+          <email_address/>
+          <transect_information>
+            <property_name/>
+            <paddock_name/>
+            <transect_id/>
+            <valid_record>yes</valid_record>
+            <transect_sample_type>dry_sample</transect_sample_type>
+            <platemeter_information>
+              <note_equation/>
+              <platemeter_equation_a>500</platemeter_equation_a>
+              <platemeter_equation_b>140</platemeter_equation_b>
+            </platemeter_information>
+            <transect_image/>
+            <qaudrat_size/>
+            <count_quadrat/>
+            <pasture_quadrat jr:template="">
+              <note_quadrat/>
+              <note_platemeter/>
+              <note_library/>
+              <quadrat_sample_type/>
+              <sample_id/>
+              <pasture_image/>
+              <pasture_image_45/>
+              <wet_weight_grams/>
+              <platemeter_height_cm/>
+              <dry_matter_percentage/>
+              <sample_dry_weight_grams/>
+              <quadrat_dmkgha/>
+              <pasture_height_cm/>
+              <stock_days_dse_q/>
+              <groundcover_percentage/>
+              <dominant_species_q/>
+              <dominant_species_other_q/>
+              <co_dominant_species_q/>
+              <sub_dominant_species_q/>
+              <quadrat_comments/>
+              <lab_results_q>
+                <lab_dry_matter_q/>
+                <lab_tsdm_kgha_q/>
+              </lab_results_q>
+              <note_walk/>
+              <pull_location>
+                <qaudrat_type/>
+                <quadrat_sample_type/>
+                <quadrat_image_gps/>
+                <quadrat_point/>
+                <quadrat_gps_y/>
+                <quadrat_gps_x/>
+                <quadrat_status/>
+                <conversion_factor/>
+                <sample_date>now()</sample_date>
+                <tsdm_variance_q/>
+                <lab_tsdm_variance_q/>
+                <valid_record_q/>
+              </pull_location>
+            </pasture_quadrat>
+            <woody_cover_site>
+              <mature_trees_count/>
+              <regrowth_count/>
+              <regrowth_average_diameter_mm/>
+              <shrubs_count/>
+              <shrubs_average_diameter_mm/>
+              <canopy_height_m/>
+            </woody_cover_site>
+            <sum_tsdm/>
+            <tsdm_kgha/>
+            <stock_days_dse/>
+            <pasture_height_average/>
+          </transect_information>
+          <lab_results>
+            <average_wetweight_grams/>
+            <lab_dry_matter/>
+            <lab_tsdm_kgha/>
+            <lab_tsdm_variance/>
+            <lab_tsdm_deviation/>
+          </lab_results>
+          <pasture_feed_test>
+            <feed_me_mjkg/>
+            <feed_protein_percentage/>
+            <feed_ndf_percentage/>
+          </pasture_feed_test>
+          <pasture_information>
+            <dominant_species/>
+            <dominant_species_other/>
+            <co_dominant_species/>
+            <sub_dominant_species/>
+            <unpalatable_species_/>
+            <unpalatable_3p_species_/>
+            <dry_matter_average/>
+            <green_fraction_average/>
+            <average_groundcover_percentage/>
+          </pasture_information>
+          <land_information>
+            <land_condition/>
+            <soil_condition/>
+            <plant_condition/>
+          </land_information>
+          <comments/>
+          <note_submit/>
+          <pre_fill_data>
+            <hectare_conversion/>
+            <field_tsdm_variance/>
+            <field_tsdm_deviation/>
+            <start_time>now()</start_time>
+            <transect_image_gps/>
+            <quadrat_gps_sum_y/>
+            <quadrat_gps_sum_x/>
+            <quadrat_gps_mid_y/>
+            <quadrat_gps_mid_x/>
+            <transect_status/>
+            <transect_start/>
+            <transect_end_y/>
+            <transect_end_x/>
+          </pre_fill_data>
+          <meta>
+            <instanceID/>
+            <instanceName/>
+          </meta>
+        </Cibo___Pasture_Biomass_Collector>
+      </instance>
+      <instance id="@exif" src="jr://file-csv/@exif.csv">
+        <root>
+          <item>
+            <name>_</name>
+            <label>_</label>
+          </item>
+        </root>
+      </instance>
+      <instance id=", " src="jr://file-csv/, .csv">
+        <root>
+          <item>
+            <name>_</name>
+            <label>_</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="@geopoint" src="jr://file-csv/@geopoint.csv">
+        <root>
+          <item>
+            <name>_</name>
+            <label>_</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/note_description" readonly="true()" type="string" calculate="pulldata(&quot;@exif&quot;,  /Cibo___Pasture_Biomass_Collector/transect_information/transect_image , &quot;GpsImgDirection&quot;)"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/email_address" type="string" constraint="regex(.,'^(([^&lt;&gt;()\[\]\\.,;:\s@&quot;]+(\.[^&lt;&gt;()\[\]\\.,;:\s@&quot;]+)*)|(&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$')" esri:fieldLength="255" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/property_name" type="string" esri:fieldLength="255" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/paddock_name" type="string" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/transect_id" type="string" calculate=" /Cibo___Pasture_Biomass_Collector/transect_information/property_name  + &quot; - &quot; + format-date( /Cibo___Pasture_Biomass_Collector/pre_fill_data/start_time , '%H%M') + &quot; &quot; +  /Cibo___Pasture_Biomass_Collector/transect_information/paddock_name " esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/valid_record" type="select1" esri:fieldLength="255" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type" type="select1" esri:fieldLength="255" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/note_equation" readonly="true()" type="string" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/platemeter_equation_a" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_sample'" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/platemeter_equation_b" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_sample'" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/transect_image" type="binary" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size" type="select1" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'" esri:fieldLength="255" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat" type="int" calculate="count( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/sample_date )" jr:requiredMsg="This is a required question" esri:fieldType="esriFieldTypeInteger" constraint=" /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat &gt; 1" required="true()" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat" esri:parameters="allowUpdates=true"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_quadrat" readonly="true()" type="string" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='dry_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_platemeter" readonly="true()" type="string" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_library" readonly="true()" type="string" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_sample_type" type="select1" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample'" esri:fieldLength="255" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_id" type="string" calculate="concat ( /Cibo___Pasture_Biomass_Collector/transect_information/property_name , &quot; - &quot;, format-date( /Cibo___Pasture_Biomass_Collector/pre_fill_data/start_time , '%H%M'))" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image" type="binary" required="true()" jr:requiredMsg="Its required for Cibo Labs biomass library"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image_45" type="binary" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/wet_weight_grams" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/platemeter_height_cm" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dry_matter_percentage" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_dry_weight_grams" type="decimal" calculate="(( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/wet_weight_grams ) *  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dry_matter_percentage ) div 100" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_dmkgha" type="decimal" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_dry_weight_grams  *  /Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion , if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_dry_weight_grams  *  /Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion , if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_dry_weight_grams  *  /Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion , if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_dry_weight_grams  *  /Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion , if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_dry_weight_grams  *  /Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion ,  /Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/platemeter_equation_a  + ( /Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/platemeter_equation_b  *  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/platemeter_height_cm ))))))" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_height_cm" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='dry_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/stock_days_dse_q" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='dry_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/groundcover_percentage" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='animal_dry_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='dry_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dominant_species_q" type="select1" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'wet_sample_q', '', /Cibo___Pasture_Biomass_Collector/pasture_information/dominant_species )" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dominant_species_other_q" type="string" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dominant_species_q  = 'other_', '', /Cibo___Pasture_Biomass_Collector/pasture_information/dominant_species_other )" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dominant_species_q  = 'other_'" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/co_dominant_species_q" type="select1" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'wet_sample_q', '', /Cibo___Pasture_Biomass_Collector/pasture_information/co_dominant_species )" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sub_dominant_species_q" type="string" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'wet_sample_q', '', /Cibo___Pasture_Biomass_Collector/pasture_information/sub_dominant_species )" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_comments" type="string" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='platemeter_calibration' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample'" esri:fieldLength="1000"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q/lab_dry_matter_q" type="int"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q/lab_tsdm_kgha_q" type="int" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'wet_sample', (( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/wet_weight_grams  *  /Cibo___Pasture_Biomass_Collector/lab_results/lab_dry_matter ) div 100) *  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/conversion_factor , (( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/wet_weight_grams  *  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q/lab_dry_matter_q ) div 100) *  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/conversion_factor )" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_walk" readonly="true()" type="string"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/qaudrat_type" type="select1" calculate=" /Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size " esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_sample_type" type="select1" calculate=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type " esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_image_gps" type="string" calculate="pulldata('@exif',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image , 'GpsLatitude') + &quot;, &quot; + pulldata('@exif',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image , 'GpsLongitude')" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_point" type="geopoint" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_gps_y" type="string" calculate="pulldata('@geopoint',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_point , 'y')" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_gps_x" type="string" calculate="pulldata('@geopoint',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_point , 'x')" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_status" type="select1" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/conversion_factor" type="int" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size ='quadrat_010', 100, if( /Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size ='quadrat_100', 10, if( /Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size ='quadrat_050', 20, 40)))" readonly="true()" esri:fieldType="esriFieldTypeInteger"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/sample_date" type="dateTime" readonly="true()" esri:fieldType="esriFieldTypeDate"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/tsdm_variance_q" type="decimal" calculate="pow(( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_dmkgha  -  /Cibo___Pasture_Biomass_Collector/transect_information/tsdm_kgha ),2)" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_'" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/lab_tsdm_variance_q" type="decimal" calculate="pow(( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/wet_weight_grams  -  /Cibo___Pasture_Biomass_Collector/lab_results/average_wetweight_grams ),2)" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_'" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/valid_record_q" type="string" calculate=" /Cibo___Pasture_Biomass_Collector/transect_information/valid_record "/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/mature_trees_count" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/regrowth_count" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/regrowth_average_diameter_mm" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/shrubs_count" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/shrubs_average_diameter_mm" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/canopy_height_m" type="int" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='woody_dry_sample'" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/sum_tsdm" type="int" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_dmkgha )" readonly="true()" esri:fieldType="esriFieldTypeInteger"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/tsdm_kgha" type="int" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_dmkgha ) div count( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image )" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/stock_days_dse" type="int" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/stock_days_dse_q ) div count( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/stock_days_dse_q )"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_height_average" type="int" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'platemeter_sample', sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/platemeter_height_cm ) div ( /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat ), if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'platemeter_calibration', sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/platemeter_height_cm ) div ( /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat ), sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_height_cm ) div ( /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat )))" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/lab_results" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/lab_results/average_wetweight_grams" type="int" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/wet_weight_grams ) div count( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image )" readonly="true()" esri:fieldType="esriFieldTypeInteger"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/lab_results/lab_dry_matter" type="int"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_kgha" type="int" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'wet_sample_q', sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q/lab_tsdm_kgha_q ) div  /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat , (( /Cibo___Pasture_Biomass_Collector/lab_results/average_wetweight_grams  *  /Cibo___Pasture_Biomass_Collector/lab_results/lab_dry_matter ) div 100) *  /Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion )" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_variance" type="decimal" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/lab_tsdm_variance_q ) div count( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image )" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_'" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_deviation" type="decimal" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type  = 'wet_sample_q', ((round(sqrt( /Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_variance ),2) * (sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q/lab_dry_matter_q ) div  /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat )) div 100) *  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/conversion_factor ,((round(sqrt( /Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_variance ),2) *  /Cibo___Pasture_Biomass_Collector/lab_results/lab_dry_matter ) div 100) *  /Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion )" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample'" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_feed_test" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='library_wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample'"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_feed_test/feed_me_mjkg" type="decimal"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_feed_test/feed_protein_percentage" type="decimal"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_feed_test/feed_ndf_percentage" type="decimal"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/dominant_species" type="select1" esri:fieldLength="255" required="true()" jr:requiredMsg="This is a required question"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/dominant_species_other" type="string" relevant=" /Cibo___Pasture_Biomass_Collector/pasture_information/dominant_species ='other_'" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/co_dominant_species" type="select1" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/sub_dominant_species" type="string" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/unpalatable_species_" type="int"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/unpalatable_3p_species_" type="int"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/dry_matter_average" type="int" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dry_matter_percentage ) div count( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_dmkgha )"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/green_fraction_average" type="int"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pasture_information/average_groundcover_percentage" type="int" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/groundcover_percentage ) div ( /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat )"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/land_information/land_condition" type="select1" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/land_information/soil_condition" type="select1" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/land_information/plant_condition" type="select1" esri:fieldLength="255"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/comments" type="string" esri:fieldLength="1000"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/note_submit" readonly="true()" type="string"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion" type="int" calculate="if( /Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size ='quadrat_010', 100, if( /Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size ='quadrat_100', 10, if( /Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size ='quadrat_050', 20, 40)))" readonly="true()" esri:fieldType="esriFieldTypeInteger"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/field_tsdm_variance" type="decimal" calculate="sum( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/tsdm_variance_q ) div count( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_dmkgha )" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_'" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/field_tsdm_deviation" type="decimal" calculate="round(sqrt( /Cibo___Pasture_Biomass_Collector/pre_fill_data/field_tsdm_variance ),2)" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/start_time" type="dateTime" readonly="true()" esri:fieldType="esriFieldTypeDate"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_image_gps" type="string" calculate="pulldata('@exif',  /Cibo___Pasture_Biomass_Collector/transect_information/transect_image , 'GpsLatitude') + &quot;, &quot; + pulldata('@exif',  /Cibo___Pasture_Biomass_Collector/transect_information/transect_image , 'GpsLongitude')" relevant=" /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample' or  /Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type ='wet_sample_q'" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_sum_y" type="decimal" calculate="round( /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat  div 2, 0)" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_sum_x" type="decimal" calculate="round( /Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat  div 2, 0)" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_mid_y" type="string" calculate="indexed-repeat( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_gps_y ,  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat ,  /Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_sum_y )" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_mid_x" type="string" calculate="indexed-repeat( /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_gps_x ,  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat ,  /Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_sum_x )" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_status" type="select1" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_start" type="geopoint" calculate=" /Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_mid_y  + &quot; &quot; +  /Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_mid_x "/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_end_y" type="string" calculate="pulldata('@geopoint',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_point , 'y')" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_end_x" type="string" calculate="pulldata('@geopoint',  /Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_point , 'x')" esri:fieldLength="255" readonly="true()"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/meta/instanceID" type="string" readonly="true()" calculate="concat('uuid:', uuid())"/>
+      <bind nodeset="/Cibo___Pasture_Biomass_Collector/meta/instanceName" type="string" calculate="concat ( /Cibo___Pasture_Biomass_Collector/transect_information/property_name , &quot; - &quot;, format-date( /Cibo___Pasture_Biomass_Collector/pre_fill_data/start_time , '%H%M'),&quot; &quot;, /Cibo___Pasture_Biomass_Collector/transect_information/paddock_name )"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Cibo___Pasture_Biomass_Collector/note_description">
+      <label>Cibo Labs - Pasture Biomass Collector</label>
+      <hint>&lt;p&gt;The Cibo-Biomass Collector App is a simple mobile data collection app for undertaking rapid pasture assessments in the paddock. It works in combination with our Biomass Library app - &lt;a href="arcgis-survey123://?itemID=98fb1de3e4444969a2ffb4fdd7c304a5"&gt;CLICK HERE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Transect location will be set to the middle qudrat, with all the data ready to be used for direct input to forage budgets, or for calibration of satellite imagery.&lt;/p&gt;
+&lt;p&gt;Our User Guide for the Pasture Biomass Collector and Library survey123 forms is available - &lt;a href="https://support.cibolabs.com.au/en/knowledge/how-to-collect-and-submit-records"&gt;CLICK HERE&lt;/a&gt;&lt;/p&gt;</hint>
+    </input>
+    <input ref="/Cibo___Pasture_Biomass_Collector/email_address">
+      <label>Email Address</label>
+      <hint>&lt;p&gt;&lt;font color="red"&gt;By entering your email address you are agreeing to the CiboLabs Privacy Policy - &lt;/font&gt;&lt;a href="https://support.cibolabs.com.au/en/knowledge/cibo-labs-privacy-policy"&gt;CLICK HERE&lt;/a&gt;&lt;/p&gt;</hint>
+    </input>
+    <group ref="/Cibo___Pasture_Biomass_Collector/transect_information">
+      <label>Transect Information</label>
+      <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/property_name">
+        <label>Property Name</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/paddock_name">
+        <label>Paddock Name</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/transect_id">
+        <label>Transect Id</label>
+        <hint>&lt;p&gt;automated based on current time and Property Name&lt;/p&gt;</hint>
+      </input>
+      <select1 appearance="horizontal" ref="/Cibo___Pasture_Biomass_Collector/transect_information/valid_record">
+        <label>Valid Record</label>
+        <hint>&lt;p&gt;Select 'No - Testing' if your practicing of testing the system&lt;/p&gt;</hint>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No - Testing</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal" ref="/Cibo___Pasture_Biomass_Collector/transect_information/transect_sample_type">
+        <label>Transect Sampling Type</label>
+        <hint>&lt;p&gt;Default is 'Dry Matter' sampling&lt;/p&gt;</hint>
+        <item>
+          <label>Pasture Cuts</label>
+          <value>wet_sample</value>
+        </item>
+        <item>
+          <label>Visual Estimates</label>
+          <value>dry_sample</value>
+        </item>
+        <item>
+          <label>Platemeter Sampling</label>
+          <value>platemeter_sample</value>
+        </item>
+        <item>
+          <label>Visual Estimates with Woody Cover</label>
+          <value>woody_dry_sample</value>
+        </item>
+        <item>
+          <label>Pasture Cuts with Woody Cover</label>
+          <value>woody_wet_sample</value>
+        </item>
+        <item>
+          <label>Platemeter Calibration</label>
+          <value>platemeter_calibration</value>
+        </item>
+        <item>
+          <label>Pasture Cuts with Quadrat Detail</label>
+          <value>wet_sample_q</value>
+        </item>
+      </select1>
+      <group ref="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information">
+        <label>Platemeter Information</label>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/note_equation">
+          <label>&lt;b&gt;&lt;font color="blue"&gt;PLEASE SUPPLY YOUR PLATEMETER EQUATION&lt;/font&gt;&lt;/b&gt;</label>
+          <hint>&lt;p&gt;Leave as default or enter formula details below (as 'kgDM/Ha = A + B x Height'), for example: A = 500 B = 140&lt;/p&gt;</hint>
+        </input>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/platemeter_equation_a">
+          <label>Equation Part - A</label>
+          <hint>&lt;p&gt;used for adding as 'A'&lt;/p&gt;</hint>
+        </input>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/platemeter_information/platemeter_equation_b">
+          <label>Equation Part - B</label>
+          <hint>&lt;p&gt;used as the multiplier 'B' with platemeter height&lt;/p&gt;</hint>
+        </input>
+      </group>
+      <upload mediatype="image/*" ref="/Cibo___Pasture_Biomass_Collector/transect_information/transect_image">
+        <label>Transect Image</label>
+        <hint>&lt;p&gt;Take photo looking along intended direction of Transect&lt;/p&gt;</hint>
+      </upload>
+      <select1 appearance="horizontal" ref="/Cibo___Pasture_Biomass_Collector/transect_information/qaudrat_size">
+        <label>Quadrat Size</label>
+        <hint>&lt;p&gt;Default is '0.25' sampling&lt;/p&gt;</hint>
+        <item>
+          <label>Not Applicable</label>
+          <value>quadrat_na</value>
+        </item>
+        <item>
+          <label>0.25 Quadrat (500mm)</label>
+          <value>quadrat_025</value>
+        </item>
+        <item>
+          <label>0.10 Quadrat (317mm)</label>
+          <value>quadrat_010</value>
+        </item>
+        <item>
+          <label>1m Quadrat (1000mm)</label>
+          <value>quadrat_100</value>
+        </item>
+        <item>
+          <label>0.5 Quadrat (707mm)</label>
+          <value>quadrat_050</value>
+        </item>
+      </select1>
+      <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/count_quadrat">
+        <label>Quadrat Count (read only)</label>
+      </input>
+      <group ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat">
+        <label>Pasture Sampling</label>
+        <repeat nodeset="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat">
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_quadrat">
+            <label>&lt;b&gt;&lt;font color="blue"&gt;NUMBER OF QUADRATS REQUIRED (MIN = 5 to MAX = 12)&lt;/font&gt;&lt;/b&gt;</label>
+          </input>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_platemeter">
+            <label>&lt;b&gt;&lt;font color="blue"&gt;DO 10 PLONKS THEN ENTER THE AVERAGE READINGS FROM PLATEMETER (MIN 5 READINGS)&lt;/font&gt;&lt;/b&gt;</label>
+            <hint>&lt;font color="blue"&gt;TRANSECT LENTGH (MIN = 10m to MAX = 50m)&lt;/font&gt;</hint>
+          </input>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_library">
+            <label>&lt;b&gt;&lt;font color="blue"&gt;COLLECT 3 SAMPLES TO REPRESENT THE PASTURE BIOMASS&lt;/font&gt;&lt;/b&gt;</label>
+          </input>
+          <select1 appearance="horizontal" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_sample_type">
+            <label>Quadrat Sample Type</label>
+            <hint>&lt;p&gt;Is this sample representing a low, mod or high total standing dry matter (TSDM) for this pasture species&lt;/p&gt;</hint>
+            <item>
+              <label>High</label>
+              <value>High</value>
+            </item>
+            <item>
+              <label>Low</label>
+              <value>Low</value>
+            </item>
+            <item>
+              <label>Moderate</label>
+              <value>Moderate</value>
+            </item>
+          </select1>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_id">
+            <label>Sample Identifier</label>
+            <hint>&lt;p&gt;Please provide the sample bag label&lt;/p&gt;</hint>
+          </input>
+          <upload mediatype="image/*" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image">
+            <label>Pasture Image</label>
+            <hint>&lt;p&gt;Optional - photo looking down (at elbow height) for paddock surface&lt;/p&gt;</hint>
+          </upload>
+          <upload mediatype="image/*" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_image_45">
+            <label>Pasture Image at 45 degrees</label>
+            <hint>&lt;p&gt;Optional - photo looking down at 45 degrees for quadrat image&lt;/p&gt;</hint>
+          </upload>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/wet_weight_grams">
+            <label>Sample Wet Weight (grams)</label>
+            <hint>&lt;p&gt;Measured weight (tared using scales) of cut pasture sample&lt;/p&gt;</hint>
+          </input>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/platemeter_height_cm">
+            <label>Platemeter Height (cm)</label>
+            <hint>&lt;p&gt;As read from Patemeter at location, optional with 'Wet Weight' sampling&lt;/p&gt;</hint>
+          </input>
+          <range ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dry_matter_percentage" start="0" end="100" step="5">
+            <label>Field Estimate Dry Matter (%)</label>
+            <hint>&lt;p&gt;Estimate dry matter % as observed in the field&lt;/p&gt;</hint>
+          </range>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sample_dry_weight_grams">
+            <label>Sample Dry Weight (grams)</label>
+            <hint>&lt;p&gt;Tare weight of dried cut pasture sample&lt;/p&gt;</hint>
+          </input>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_dmkgha">
+            <label>Field Estimate TSDM (kg/Ha)</label>
+            <hint>&lt;p&gt;Total Standing Dry Matter as kg/Ha estimate for location&lt;/p&gt;</hint>
+          </input>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pasture_height_cm">
+            <label>Estimate Pasture Height (cm)</label>
+            <hint>&lt;p&gt;Optional - estimate based on ruler at location&lt;/p&gt;</hint>
+          </input>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/stock_days_dse_q">
+            <label>Field Estimate Stock Days (as DSE/Ha)</label>
+            <hint>&lt;p&gt;Optional - Quadrat Estimate for Grazing Days (ie: Stock, LSU etc) with LSU = 8 DSE&lt;/p&gt;</hint>
+          </input>
+          <range ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/groundcover_percentage" start="0" end="100" step="5">
+            <label>Groundcover Percentage (%)</label>
+            <hint>&lt;p&gt;Optional - estimate ground-cover % calculated&lt;/p&gt;</hint>
+          </range>
+          <select1 appearance="autocomplete" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dominant_species_q">
+            <label>Dominant Species</label>
+            <hint>&lt;p&gt;Please use the common name of species. If ground use 'Bare' and if not listed use 'Other'&lt;/p&gt;</hint>
+            <item>
+              <label>Angleton</label>
+              <value>angleton</value>
+            </item>
+            <item>
+              <label>Annual grasses</label>
+              <value>annual_grasses</value>
+            </item>
+            <item>
+              <label>Annual sorghum</label>
+              <value>annual_sorghum</value>
+            </item>
+            <item>
+              <label>Annual verbine</label>
+              <value>annual_verbine</value>
+            </item>
+            <item>
+              <label>Aristida species</label>
+              <value>aristida_sp</value>
+            </item>
+            <item>
+              <label>Asbestos grass</label>
+              <value>asbestos_grass</value>
+            </item>
+            <item>
+              <label>Australian Drop Seed</label>
+              <value>australian_drop_seed</value>
+            </item>
+            <item>
+              <label>Balansa Clover</label>
+              <value>balansa_clover</value>
+            </item>
+            <item>
+              <label>Bambatsi Panic</label>
+              <value>bambatsi_panic</value>
+            </item>
+            <item>
+              <label>Bandicoot Grass</label>
+              <value>bandicoot_grass</value>
+            </item>
+            <item>
+              <label>Barb wire grass</label>
+              <value>barbwire_grass</value>
+            </item>
+            <item>
+              <label>Barley</label>
+              <value>barley</value>
+            </item>
+            <item>
+              <label>Barley Grass</label>
+              <value>barley_grass</value>
+            </item>
+            <item>
+              <label>Barley Mitchell</label>
+              <value>barley_mitchell</value>
+            </item>
+            <item>
+              <label>Bisset Bluegrass</label>
+              <value>bisset_bluegrass</value>
+            </item>
+            <item>
+              <label>Black Oats</label>
+              <value>black_oats</value>
+            </item>
+            <item>
+              <label>Black rolly poly</label>
+              <value>black_rolly_poly</value>
+            </item>
+            <item>
+              <label>Black speargrass</label>
+              <value>black_speargrass</value>
+            </item>
+            <item>
+              <label>Bladder ketmia</label>
+              <value>bladder_ketmia</value>
+            </item>
+            <item>
+              <label>Bluebush</label>
+              <value>bluebush</value>
+            </item>
+            <item>
+              <label>Bluegrass</label>
+              <value>bluegrass</value>
+            </item>
+            <item>
+              <label>Bluegrass Tassel</label>
+              <value>bluegrass_tassel</value>
+            </item>
+            <item>
+              <label>Bottle washer grass</label>
+              <value>bottle_washer_grass</value>
+            </item>
+            <item>
+              <label>Broadleaf</label>
+              <value>broadleaf</value>
+            </item>
+            <item>
+              <label>Broadleaf Mix</label>
+              <value>broadleaf_mix</value>
+            </item>
+            <item>
+              <label>Brown top</label>
+              <value>brown_top</value>
+            </item>
+            <item>
+              <label>Buffel grass</label>
+              <value>buffel_grass</value>
+            </item>
+            <item>
+              <label>Bull Mitchell</label>
+              <value>bull_mitchell</value>
+            </item>
+            <item>
+              <label>Button grass</label>
+              <value>button_grass</value>
+            </item>
+            <item>
+              <label>Canola</label>
+              <value>canola</value>
+            </item>
+            <item>
+              <label>Canola 970</label>
+              <value>canola_970</value>
+            </item>
+            <item>
+              <label>Capeweed</label>
+              <value>capeweed</value>
+            </item>
+            <item>
+              <label>Cereals</label>
+              <value>cereals</value>
+            </item>
+            <item>
+              <label>Chickory</label>
+              <value>chickory</value>
+            </item>
+            <item>
+              <label>Chloris</label>
+              <value>chloris</value>
+            </item>
+            <item>
+              <label>Cida</label>
+              <value>cida</value>
+            </item>
+            <item>
+              <label>Cilitors</label>
+              <value>cilitors</value>
+            </item>
+            <item>
+              <label>Clover</label>
+              <value>clover</value>
+            </item>
+            <item>
+              <label>Cocksfoot</label>
+              <value>cocksfoot</value>
+            </item>
+            <item>
+              <label>Comb grass</label>
+              <value>comb_grass</value>
+            </item>
+            <item>
+              <label>Common joy weed</label>
+              <value>common_joy_weed</value>
+            </item>
+            <item>
+              <label>Copper Burr</label>
+              <value>copper_burr</value>
+            </item>
+            <item>
+              <label>Cotton Bush</label>
+              <value>cotton_bush</value>
+            </item>
+            <item>
+              <label>Cotton Panic</label>
+              <value>cotton_panic</value>
+            </item>
+            <item>
+              <label>Couch grass</label>
+              <value>couch_grass</value>
+            </item>
+            <item>
+              <label>Cow vine</label>
+              <value>cow_vine</value>
+            </item>
+            <item>
+              <label>Creeping blues</label>
+              <value>creeping_blues</value>
+            </item>
+            <item>
+              <label>Creeping lantana</label>
+              <value>creeping_lantana</value>
+            </item>
+            <item>
+              <label>Crop Stubble</label>
+              <value>crop_stubble</value>
+            </item>
+            <item>
+              <label>Cup grass</label>
+              <value>cup_grass</value>
+            </item>
+            <item>
+              <label>Curly bluegrass</label>
+              <value>curly_bluegrass</value>
+            </item>
+            <item>
+              <label>Curly Mitchell</label>
+              <value>curly_mitchell</value>
+            </item>
+            <item>
+              <label>Delicate lovegrass</label>
+              <value>delicate_lovegrass</value>
+            </item>
+            <item>
+              <label>Digitaria</label>
+              <value>digitaria</value>
+            </item>
+            <item>
+              <label>Downs sorghum</label>
+              <value>downs_sorghum</value>
+            </item>
+            <item>
+              <label>Drop seed</label>
+              <value>drop_seed</value>
+            </item>
+            <item>
+              <label>Dry Clover</label>
+              <value>dry_clover</value>
+            </item>
+            <item>
+              <label>Emu foot</label>
+              <value>emu_foot</value>
+            </item>
+            <item>
+              <label>Eragrostis species</label>
+              <value>eragrostis_spp</value>
+            </item>
+            <item>
+              <label>Erodium</label>
+              <value>erodium</value>
+            </item>
+            <item>
+              <label>Fairy grass</label>
+              <value>fairy_grass</value>
+            </item>
+            <item>
+              <label>Feathertop</label>
+              <value>feathertop</value>
+            </item>
+            <item>
+              <label>Feathertop wiregrass</label>
+              <value>feathertop_wiregrass</value>
+            </item>
+            <item>
+              <label>Fennel</label>
+              <value>fennel</value>
+            </item>
+            <item>
+              <label>Fescue</label>
+              <value>fescue</value>
+            </item>
+            <item>
+              <label>Fire grass</label>
+              <value>fire_grass</value>
+            </item>
+            <item>
+              <label>Flathead burr</label>
+              <value>flathead_burr</value>
+            </item>
+            <item>
+              <label>Flemmings bush</label>
+              <value>flemmings_bush</value>
+            </item>
+            <item>
+              <label>Flinders grass</label>
+              <value>flinders_grass</value>
+            </item>
+            <item>
+              <label>Fluffy Gomphrena</label>
+              <value>fluffy_gomphrena</value>
+            </item>
+            <item>
+              <label>Forage sorghum</label>
+              <value>forage_sorghum</value>
+            </item>
+            <item>
+              <label>Forbes</label>
+              <value>forbes</value>
+            </item>
+            <item>
+              <label>Forest Bluegrass</label>
+              <value>forest_bluegrass</value>
+            </item>
+            <item>
+              <label>Fringed glycine</label>
+              <value>frindge_glycine</value>
+            </item>
+            <item>
+              <label>Galvanised Burr</label>
+              <value>galvanised_burr</value>
+            </item>
+            <item>
+              <label>Gamba Grass</label>
+              <value>gamba_grass</value>
+            </item>
+            <item>
+              <label>Gatton Panic</label>
+              <value>gatton_panic</value>
+            </item>
+            <item>
+              <label>Georgina Lucerne</label>
+              <value>georgina_lucerne</value>
+            </item>
+            <item>
+              <label>Geranium</label>
+              <value>geranium</value>
+            </item>
+            <item>
+              <label>Giathead burr</label>
+              <value>giathead_burr</value>
+            </item>
+            <item>
+              <label>Gidgee burr</label>
+              <value>gidgee_burr</value>
+            </item>
+            <item>
+              <label>Goathead burr</label>
+              <value>goathead_burr</value>
+            </item>
+            <item>
+              <label>Golden beard grass</label>
+              <value>golden_beard_grass</value>
+            </item>
+            <item>
+              <label>Green Panic</label>
+              <value>green_panic</value>
+            </item>
+            <item>
+              <label>Hairy Panic</label>
+              <value>hairy_panic</value>
+            </item>
+            <item>
+              <label>Herbages</label>
+              <value>herbages</value>
+            </item>
+            <item>
+              <label>Hoop Mitchell</label>
+              <value>hoop_mitchell</value>
+            </item>
+            <item>
+              <label>Humidicola Tully</label>
+              <value>humidicola_tully</value>
+            </item>
+            <item>
+              <label>Indian couch</label>
+              <value>indian_couch</value>
+            </item>
+            <item>
+              <label>Italian Ryegrass</label>
+              <value>italian_ryegrass</value>
+            </item>
+            <item>
+              <label>Joyweed</label>
+              <value>joyweed</value>
+            </item>
+            <item>
+              <label>Kangaroo grass</label>
+              <value>kangaroo_grass</value>
+            </item>
+            <item>
+              <label>Kerosine grass</label>
+              <value>kerosine_grass</value>
+            </item>
+            <item>
+              <label>Kikuyu</label>
+              <value>kikuyu</value>
+            </item>
+            <item>
+              <label>Leaf Litter</label>
+              <value>leaf_litter</value>
+            </item>
+            <item>
+              <label>Limestone bottlewasher</label>
+              <value>limestone_bottlewasher</value>
+            </item>
+            <item>
+              <label>Liquiorice bush</label>
+              <value>liquiorice_bush</value>
+            </item>
+            <item>
+              <label>Litter and Bare</label>
+              <value>bare_litter</value>
+            </item>
+            <item>
+              <label>Long spine sclerolena</label>
+              <value>long_spine_sclerolena</value>
+            </item>
+            <item>
+              <label>Love grass</label>
+              <value>love_grass</value>
+            </item>
+            <item>
+              <label>Lovegrass species</label>
+              <value>lovegrass_species</value>
+            </item>
+            <item>
+              <label>Low-THC Hemp</label>
+              <value>hemp</value>
+            </item>
+            <item>
+              <label>Lucerne</label>
+              <value>lucerne</value>
+            </item>
+            <item>
+              <label>Lucerne Mix</label>
+              <value>lucerne_mix</value>
+            </item>
+            <item>
+              <label>Medic</label>
+              <value>medic</value>
+            </item>
+            <item>
+              <label>Mekong Cresantha</label>
+              <value>mekong_cresantha</value>
+            </item>
+            <item>
+              <label>Millet</label>
+              <value>millet</value>
+            </item>
+            <item>
+              <label>Mitchell Grass Species</label>
+              <value>mitchell_grass_sp</value>
+            </item>
+            <item>
+              <label>Mixed</label>
+              <value>mixed</value>
+            </item>
+            <item>
+              <label>Mulga Grass</label>
+              <value>mulga_grass</value>
+            </item>
+            <item>
+              <label>Mulla Mulla</label>
+              <value>mulla_mulla</value>
+            </item>
+            <item>
+              <label>Munyeroo</label>
+              <value>munyeroo</value>
+            </item>
+            <item>
+              <label>Nardoo</label>
+              <value>nardoo</value>
+            </item>
+            <item>
+              <label>Native</label>
+              <value>native</value>
+            </item>
+            <item>
+              <label>Native Couch</label>
+              <value>native_couch</value>
+            </item>
+            <item>
+              <label>Native jute</label>
+              <value>native_jute</value>
+            </item>
+            <item>
+              <label>Native millet</label>
+              <value>native_millet</value>
+            </item>
+            <item>
+              <label>Native sorghum</label>
+              <value>native_sorghum</value>
+            </item>
+            <item>
+              <label>Neptunia</label>
+              <value>neptunia</value>
+            </item>
+            <item>
+              <label>Nut grass</label>
+              <value>nut_grass</value>
+            </item>
+            <item>
+              <label>Oats</label>
+              <value>oats</value>
+            </item>
+            <item>
+              <label>Onion Weed</label>
+              <value>onion_weed</value>
+            </item>
+            <item>
+              <label>Other</label>
+              <value>other_</value>
+            </item>
+            <item>
+              <label>Paper Onion Vine</label>
+              <value>paper_onion_vine</value>
+            </item>
+            <item>
+              <label>Parakeelya</label>
+              <value>parakeelya</value>
+            </item>
+            <item>
+              <label>Patterson�s Curse</label>
+              <value>pattersons_curse</value>
+            </item>
+            <item>
+              <label>Pea bush</label>
+              <value>pea_bush</value>
+            </item>
+            <item>
+              <label>Peach vine</label>
+              <value>peach_vine</value>
+            </item>
+            <item>
+              <label>Pepper grass</label>
+              <value>pepper_grass</value>
+            </item>
+            <item>
+              <label>Perennial grass sp</label>
+              <value>perennial_grass_sp</value>
+            </item>
+            <item>
+              <label>Perennial Ryegrass</label>
+              <value>perennial_ryegrass</value>
+            </item>
+            <item>
+              <label>Phalaris</label>
+              <value>phalaris</value>
+            </item>
+            <item>
+              <label>Phalaris Mix</label>
+              <value>phalaris_mix</value>
+            </item>
+            <item>
+              <label>Pigweed</label>
+              <value>pigweed</value>
+            </item>
+            <item>
+              <label>Plainsgrass</label>
+              <value>plainsgrass</value>
+            </item>
+            <item>
+              <label>Plume Sorghum</label>
+              <value>plume_sorghum</value>
+            </item>
+            <item>
+              <label>Premier Digit</label>
+              <value>premier_digit</value>
+            </item>
+            <item>
+              <label>Purple joy weed</label>
+              <value>purple_joy_weed</value>
+            </item>
+            <item>
+              <label>Purple pigeon</label>
+              <value>purple_pigeon</value>
+            </item>
+            <item>
+              <label>Queensland blue grass</label>
+              <value>qld_blue_grass</value>
+            </item>
+            <item>
+              <label>Raddish</label>
+              <value>raddish</value>
+            </item>
+            <item>
+              <label>Rape</label>
+              <value>rape</value>
+            </item>
+            <item>
+              <label>Red Grass</label>
+              <value>native_red_grass</value>
+            </item>
+            <item>
+              <label>Red Natal species</label>
+              <value>red_natal_sp</value>
+            </item>
+            <item>
+              <label>Rhodes grass</label>
+              <value>rhodes_grass</value>
+            </item>
+            <item>
+              <label>Rhyncosia</label>
+              <value>rhyncosia</value>
+            </item>
+            <item>
+              <label>Rolley polly shrub</label>
+              <value>rolley_polly_shrub</value>
+            </item>
+            <item>
+              <label>Rye-Mix</label>
+              <value>rye_mix</value>
+            </item>
+            <item>
+              <label>Ryegrass</label>
+              <value>ryegrass</value>
+            </item>
+            <item>
+              <label>Ryncosia</label>
+              <value>rhyncosia</value>
+            </item>
+            <item>
+              <label>Sabi grass</label>
+              <value>sabi_grass</value>
+            </item>
+            <item>
+              <label>Sclerolena species</label>
+              <value>sclerolena_sp</value>
+            </item>
+            <item>
+              <label>Sclerolinas</label>
+              <value>sclerolinas</value>
+            </item>
+            <item>
+              <label>Scrubby Stylo</label>
+              <value>scrubby_stylo</value>
+            </item>
+            <item>
+              <label>Seca</label>
+              <value>seca</value>
+            </item>
+            <item>
+              <label>Sedge grass</label>
+              <value>sedge_grass</value>
+            </item>
+            <item>
+              <label>Sedge species</label>
+              <value>sedge_sp</value>
+            </item>
+            <item>
+              <label>Sensitive Plant</label>
+              <value>sensitive_plant</value>
+            </item>
+            <item>
+              <label>Shot Grass</label>
+              <value>shot_grass</value>
+            </item>
+            <item>
+              <label>Sida species</label>
+              <value>sida_sp</value>
+            </item>
+            <item>
+              <label>Signal Grass</label>
+              <value>signal_grass</value>
+            </item>
+            <item>
+              <label>Silk Sorghum</label>
+              <value>silk_sorgham</value>
+            </item>
+            <item>
+              <label>Silky Browntop</label>
+              <value>silky_browntop</value>
+            </item>
+            <item>
+              <label>Silver Grass</label>
+              <value>silver_grass</value>
+            </item>
+            <item>
+              <label>Soda bush</label>
+              <value>soda_bush</value>
+            </item>
+            <item>
+              <label>Soda bush</label>
+              <value>slender_chloris</value>
+            </item>
+            <item>
+              <label>Soft Rolly Polly</label>
+              <value>soft_rolly_polly</value>
+            </item>
+            <item>
+              <label>Sorghum</label>
+              <value>sorghum</value>
+            </item>
+            <item>
+              <label>Spinifex</label>
+              <value>spinifex</value>
+            </item>
+            <item>
+              <label>Spurge</label>
+              <value>spurge</value>
+            </item>
+            <item>
+              <label>Stipa species</label>
+              <value>stipa_sp</value>
+            </item>
+            <item>
+              <label>Strawberry Clover</label>
+              <value>strawberry_clover</value>
+            </item>
+            <item>
+              <label>Stylo</label>
+              <value>stylo</value>
+            </item>
+            <item>
+              <label>Sub Clover</label>
+              <value>sub_clover</value>
+            </item>
+            <item>
+              <label>Sultan Annual Rye</label>
+              <value>sultan_annual_rye</value>
+            </item>
+            <item>
+              <label>Summer grass</label>
+              <value>summer_grass</value>
+            </item>
+            <item>
+              <label>Sunflower daisy</label>
+              <value>sunflower_daisy</value>
+            </item>
+            <item>
+              <label>Switchgrass (panicum native)</label>
+              <value>switchgrass_native</value>
+            </item>
+            <item>
+              <label>Tar vine</label>
+              <value>tar_vine</value>
+            </item>
+            <item>
+              <label>Three awn species</label>
+              <value>three_awn_sp</value>
+            </item>
+            <item>
+              <label>Tick weed</label>
+              <value>tick_weed</value>
+            </item>
+            <item>
+              <label>Tillage Raddish</label>
+              <value>tillage_raddish</value>
+            </item>
+            <item>
+              <label>Triticale</label>
+              <value>triticale</value>
+            </item>
+            <item>
+              <label>Tropical species</label>
+              <value>tropical_spp</value>
+            </item>
+            <item>
+              <label>Tully</label>
+              <value>tully</value>
+            </item>
+            <item>
+              <label>Turnip</label>
+              <value>turnip</value>
+            </item>
+            <item>
+              <label>Unknown species</label>
+              <value>unknown_species</value>
+            </item>
+            <item>
+              <label>Urochloa</label>
+              <value>urochloa</value>
+            </item>
+            <item>
+              <label>Veldt Grass</label>
+              <value>veldt_grass</value>
+            </item>
+            <item>
+              <label>Verbina</label>
+              <value>verbena</value>
+            </item>
+            <item>
+              <label>Verbine</label>
+              <value>verbine</value>
+            </item>
+            <item>
+              <label>Vetch</label>
+              <value>vetch</value>
+            </item>
+            <item>
+              <label>Wallaby Grass</label>
+              <value>native_wallaby_grass</value>
+            </item>
+            <item>
+              <label>Waltheria</label>
+              <value>waltheria</value>
+            </item>
+            <item>
+              <label>Wanderie</label>
+              <value>wanderie</value>
+            </item>
+            <item>
+              <label>Weeping Grass</label>
+              <value>microleena_weeping_grass</value>
+            </item>
+            <item>
+              <label>Weeping Mitchell</label>
+              <value>weeping_mitchell</value>
+            </item>
+            <item>
+              <label>Wheat</label>
+              <value>wheat</value>
+            </item>
+            <item>
+              <label>White Clover</label>
+              <value>white_clover</value>
+            </item>
+            <item>
+              <label>White speargrass</label>
+              <value>white_speargrass</value>
+            </item>
+            <item>
+              <label>Whitegrass</label>
+              <value>whitegrass</value>
+            </item>
+            <item>
+              <label>Wild rice</label>
+              <value>wild_rice</value>
+            </item>
+            <item>
+              <label>Windmill Grass</label>
+              <value>windmaill_grass</value>
+            </item>
+            <item>
+              <label>Winter Grass</label>
+              <value>winter_grass</value>
+            </item>
+            <item>
+              <label>Wire grass species</label>
+              <value>wire_grass_sp</value>
+            </item>
+            <item>
+              <label>Wooly Butt</label>
+              <value>wooly_butt</value>
+            </item>
+            <item>
+              <label>Wooly Copper burr</label>
+              <value>wooly_copper_burr</value>
+            </item>
+            <item>
+              <label>Wooly Oat</label>
+              <value>wooly_oat</value>
+            </item>
+            <item>
+              <label>Wynn cassia</label>
+              <value>wynn_cassia</value>
+            </item>
+            <item>
+              <label>Zig Zag grass</label>
+              <value>zig_zag_grass</value>
+            </item>
+          </select1>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/dominant_species_other_q">
+            <label>Dominant Species - Other</label>
+            <hint>&lt;p&gt;other species not listed above- free text&lt;/p&gt;</hint>
+          </input>
+          <select1 appearance="autocomplete" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/co_dominant_species_q">
+            <label>Co-dominant Species</label>
+            <hint>&lt;p&gt;Please use the common name of species&lt;/p&gt;</hint>
+            <item>
+              <label>Angleton</label>
+              <value>angleton</value>
+            </item>
+            <item>
+              <label>Annual grasses</label>
+              <value>annual_grasses</value>
+            </item>
+            <item>
+              <label>Annual sorghum</label>
+              <value>annual_sorghum</value>
+            </item>
+            <item>
+              <label>Annual verbine</label>
+              <value>annual_verbine</value>
+            </item>
+            <item>
+              <label>Aristida species</label>
+              <value>aristida_sp</value>
+            </item>
+            <item>
+              <label>Asbestos grass</label>
+              <value>asbestos_grass</value>
+            </item>
+            <item>
+              <label>Australian Drop Seed</label>
+              <value>australian_drop_seed</value>
+            </item>
+            <item>
+              <label>Balansa Clover</label>
+              <value>balansa_clover</value>
+            </item>
+            <item>
+              <label>Bambatsi Panic</label>
+              <value>bambatsi_panic</value>
+            </item>
+            <item>
+              <label>Bandicoot Grass</label>
+              <value>bandicoot_grass</value>
+            </item>
+            <item>
+              <label>Barb wire grass</label>
+              <value>barbwire_grass</value>
+            </item>
+            <item>
+              <label>Barley</label>
+              <value>barley</value>
+            </item>
+            <item>
+              <label>Barley Grass</label>
+              <value>barley_grass</value>
+            </item>
+            <item>
+              <label>Barley Mitchell</label>
+              <value>barley_mitchell</value>
+            </item>
+            <item>
+              <label>Bisset Bluegrass</label>
+              <value>bisset_bluegrass</value>
+            </item>
+            <item>
+              <label>Black Oats</label>
+              <value>black_oats</value>
+            </item>
+            <item>
+              <label>Black rolly poly</label>
+              <value>black_rolly_poly</value>
+            </item>
+            <item>
+              <label>Black speargrass</label>
+              <value>black_speargrass</value>
+            </item>
+            <item>
+              <label>Bladder ketmia</label>
+              <value>bladder_ketmia</value>
+            </item>
+            <item>
+              <label>Bluebush</label>
+              <value>bluebush</value>
+            </item>
+            <item>
+              <label>Bluegrass</label>
+              <value>bluegrass</value>
+            </item>
+            <item>
+              <label>Bluegrass Tassel</label>
+              <value>bluegrass_tassel</value>
+            </item>
+            <item>
+              <label>Bottle washer grass</label>
+              <value>bottle_washer_grass</value>
+            </item>
+            <item>
+              <label>Broadleaf</label>
+              <value>broadleaf</value>
+            </item>
+            <item>
+              <label>Broadleaf Mix</label>
+              <value>broadleaf_mix</value>
+            </item>
+            <item>
+              <label>Brown top</label>
+              <value>brown_top</value>
+            </item>
+            <item>
+              <label>Buffel grass</label>
+              <value>buffel_grass</value>
+            </item>
+            <item>
+              <label>Bull Mitchell</label>
+              <value>bull_mitchell</value>
+            </item>
+            <item>
+              <label>Button grass</label>
+              <value>button_grass</value>
+            </item>
+            <item>
+              <label>Canola</label>
+              <value>canola</value>
+            </item>
+            <item>
+              <label>Canola 970</label>
+              <value>canola_970</value>
+            </item>
+            <item>
+              <label>Capeweed</label>
+              <value>capeweed</value>
+            </item>
+            <item>
+              <label>Cereals</label>
+              <value>cereals</value>
+            </item>
+            <item>
+              <label>Chickory</label>
+              <value>chickory</value>
+            </item>
+            <item>
+              <label>Chloris</label>
+              <value>chloris</value>
+            </item>
+            <item>
+              <label>Cida</label>
+              <value>cida</value>
+            </item>
+            <item>
+              <label>Cilitors</label>
+              <value>cilitors</value>
+            </item>
+            <item>
+              <label>Clover</label>
+              <value>clover</value>
+            </item>
+            <item>
+              <label>Cocksfoot</label>
+              <value>cocksfoot</value>
+            </item>
+            <item>
+              <label>Comb grass</label>
+              <value>comb_grass</value>
+            </item>
+            <item>
+              <label>Common joy weed</label>
+              <value>common_joy_weed</value>
+            </item>
+            <item>
+              <label>Copper Burr</label>
+              <value>copper_burr</value>
+            </item>
+            <item>
+              <label>Cotton Bush</label>
+              <value>cotton_bush</value>
+            </item>
+            <item>
+              <label>Cotton Panic</label>
+              <value>cotton_panic</value>
+            </item>
+            <item>
+              <label>Couch grass</label>
+              <value>couch_grass</value>
+            </item>
+            <item>
+              <label>Cow vine</label>
+              <value>cow_vine</value>
+            </item>
+            <item>
+              <label>Creeping blues</label>
+              <value>creeping_blues</value>
+            </item>
+            <item>
+              <label>Creeping lantana</label>
+              <value>creeping_lantana</value>
+            </item>
+            <item>
+              <label>Crop Stubble</label>
+              <value>crop_stubble</value>
+            </item>
+            <item>
+              <label>Cup grass</label>
+              <value>cup_grass</value>
+            </item>
+            <item>
+              <label>Curly bluegrass</label>
+              <value>curly_bluegrass</value>
+            </item>
+            <item>
+              <label>Curly Mitchell</label>
+              <value>curly_mitchell</value>
+            </item>
+            <item>
+              <label>Delicate lovegrass</label>
+              <value>delicate_lovegrass</value>
+            </item>
+            <item>
+              <label>Digitaria</label>
+              <value>digitaria</value>
+            </item>
+            <item>
+              <label>Downs sorghum</label>
+              <value>downs_sorghum</value>
+            </item>
+            <item>
+              <label>Drop seed</label>
+              <value>drop_seed</value>
+            </item>
+            <item>
+              <label>Dry Clover</label>
+              <value>dry_clover</value>
+            </item>
+            <item>
+              <label>Emu foot</label>
+              <value>emu_foot</value>
+            </item>
+            <item>
+              <label>Eragrostis species</label>
+              <value>eragrostis_spp</value>
+            </item>
+            <item>
+              <label>Erodium</label>
+              <value>erodium</value>
+            </item>
+            <item>
+              <label>Fairy grass</label>
+              <value>fairy_grass</value>
+            </item>
+            <item>
+              <label>Feathertop</label>
+              <value>feathertop</value>
+            </item>
+            <item>
+              <label>Feathertop wiregrass</label>
+              <value>feathertop_wiregrass</value>
+            </item>
+            <item>
+              <label>Fennel</label>
+              <value>fennel</value>
+            </item>
+            <item>
+              <label>Fescue</label>
+              <value>fescue</value>
+            </item>
+            <item>
+              <label>Fire grass</label>
+              <value>fire_grass</value>
+            </item>
+            <item>
+              <label>Flathead burr</label>
+              <value>flathead_burr</value>
+            </item>
+            <item>
+              <label>Flemmings bush</label>
+              <value>flemmings_bush</value>
+            </item>
+            <item>
+              <label>Flinders grass</label>
+              <value>flinders_grass</value>
+            </item>
+            <item>
+              <label>Fluffy Gomphrena</label>
+              <value>fluffy_gomphrena</value>
+            </item>
+            <item>
+              <label>Forage sorghum</label>
+              <value>forage_sorghum</value>
+            </item>
+            <item>
+              <label>Forbes</label>
+              <value>forbes</value>
+            </item>
+            <item>
+              <label>Forest Bluegrass</label>
+              <value>forest_bluegrass</value>
+            </item>
+            <item>
+              <label>Fringed glycine</label>
+              <value>frindge_glycine</value>
+            </item>
+            <item>
+              <label>Galvanised Burr</label>
+              <value>galvanised_burr</value>
+            </item>
+            <item>
+              <label>Gamba Grass</label>
+              <value>gamba_grass</value>
+            </item>
+            <item>
+              <label>Gatton Panic</label>
+              <value>gatton_panic</value>
+            </item>
+            <item>
+              <label>Georgina Lucerne</label>
+              <value>georgina_lucerne</value>
+            </item>
+            <item>
+              <label>Geranium</label>
+              <value>geranium</value>
+            </item>
+            <item>
+              <label>Giathead burr</label>
+              <value>giathead_burr</value>
+            </item>
+            <item>
+              <label>Gidgee burr</label>
+              <value>gidgee_burr</value>
+            </item>
+            <item>
+              <label>Goathead burr</label>
+              <value>goathead_burr</value>
+            </item>
+            <item>
+              <label>Golden beard grass</label>
+              <value>golden_beard_grass</value>
+            </item>
+            <item>
+              <label>Green Panic</label>
+              <value>green_panic</value>
+            </item>
+            <item>
+              <label>Hairy Panic</label>
+              <value>hairy_panic</value>
+            </item>
+            <item>
+              <label>Herbages</label>
+              <value>herbages</value>
+            </item>
+            <item>
+              <label>Hoop Mitchell</label>
+              <value>hoop_mitchell</value>
+            </item>
+            <item>
+              <label>Humidicola Tully</label>
+              <value>humidicola_tully</value>
+            </item>
+            <item>
+              <label>Indian couch</label>
+              <value>indian_couch</value>
+            </item>
+            <item>
+              <label>Italian Ryegrass</label>
+              <value>italian_ryegrass</value>
+            </item>
+            <item>
+              <label>Joyweed</label>
+              <value>joyweed</value>
+            </item>
+            <item>
+              <label>Kangaroo grass</label>
+              <value>kangaroo_grass</value>
+            </item>
+            <item>
+              <label>Kerosine grass</label>
+              <value>kerosine_grass</value>
+            </item>
+            <item>
+              <label>Kikuyu</label>
+              <value>kikuyu</value>
+            </item>
+            <item>
+              <label>Leaf Litter</label>
+              <value>leaf_litter</value>
+            </item>
+            <item>
+              <label>Limestone bottlewasher</label>
+              <value>limestone_bottlewasher</value>
+            </item>
+            <item>
+              <label>Liquiorice bush</label>
+              <value>liquiorice_bush</value>
+            </item>
+            <item>
+              <label>Litter and Bare</label>
+              <value>bare_litter</value>
+            </item>
+            <item>
+              <label>Long spine sclerolena</label>
+              <value>long_spine_sclerolena</value>
+            </item>
+            <item>
+              <label>Love grass</label>
+              <value>love_grass</value>
+            </item>
+            <item>
+              <label>Lovegrass species</label>
+              <value>lovegrass_species</value>
+            </item>
+            <item>
+              <label>Low-THC Hemp</label>
+              <value>hemp</value>
+            </item>
+            <item>
+              <label>Lucerne</label>
+              <value>lucerne</value>
+            </item>
+            <item>
+              <label>Lucerne Mix</label>
+              <value>lucerne_mix</value>
+            </item>
+            <item>
+              <label>Medic</label>
+              <value>medic</value>
+            </item>
+            <item>
+              <label>Mekong Cresantha</label>
+              <value>mekong_cresantha</value>
+            </item>
+            <item>
+              <label>Millet</label>
+              <value>millet</value>
+            </item>
+            <item>
+              <label>Mitchell Grass Species</label>
+              <value>mitchell_grass_sp</value>
+            </item>
+            <item>
+              <label>Mixed</label>
+              <value>mixed</value>
+            </item>
+            <item>
+              <label>Mulga Grass</label>
+              <value>mulga_grass</value>
+            </item>
+            <item>
+              <label>Mulla Mulla</label>
+              <value>mulla_mulla</value>
+            </item>
+            <item>
+              <label>Munyeroo</label>
+              <value>munyeroo</value>
+            </item>
+            <item>
+              <label>Nardoo</label>
+              <value>nardoo</value>
+            </item>
+            <item>
+              <label>Native</label>
+              <value>native</value>
+            </item>
+            <item>
+              <label>Native Couch</label>
+              <value>native_couch</value>
+            </item>
+            <item>
+              <label>Native jute</label>
+              <value>native_jute</value>
+            </item>
+            <item>
+              <label>Native millet</label>
+              <value>native_millet</value>
+            </item>
+            <item>
+              <label>Native sorghum</label>
+              <value>native_sorghum</value>
+            </item>
+            <item>
+              <label>Neptunia</label>
+              <value>neptunia</value>
+            </item>
+            <item>
+              <label>Nut grass</label>
+              <value>nut_grass</value>
+            </item>
+            <item>
+              <label>Oats</label>
+              <value>oats</value>
+            </item>
+            <item>
+              <label>Onion Weed</label>
+              <value>onion_weed</value>
+            </item>
+            <item>
+              <label>Other</label>
+              <value>other_</value>
+            </item>
+            <item>
+              <label>Paper Onion Vine</label>
+              <value>paper_onion_vine</value>
+            </item>
+            <item>
+              <label>Parakeelya</label>
+              <value>parakeelya</value>
+            </item>
+            <item>
+              <label>Patterson�s Curse</label>
+              <value>pattersons_curse</value>
+            </item>
+            <item>
+              <label>Pea bush</label>
+              <value>pea_bush</value>
+            </item>
+            <item>
+              <label>Peach vine</label>
+              <value>peach_vine</value>
+            </item>
+            <item>
+              <label>Pepper grass</label>
+              <value>pepper_grass</value>
+            </item>
+            <item>
+              <label>Perennial grass sp</label>
+              <value>perennial_grass_sp</value>
+            </item>
+            <item>
+              <label>Perennial Ryegrass</label>
+              <value>perennial_ryegrass</value>
+            </item>
+            <item>
+              <label>Phalaris</label>
+              <value>phalaris</value>
+            </item>
+            <item>
+              <label>Phalaris Mix</label>
+              <value>phalaris_mix</value>
+            </item>
+            <item>
+              <label>Pigweed</label>
+              <value>pigweed</value>
+            </item>
+            <item>
+              <label>Plainsgrass</label>
+              <value>plainsgrass</value>
+            </item>
+            <item>
+              <label>Plume Sorghum</label>
+              <value>plume_sorghum</value>
+            </item>
+            <item>
+              <label>Premier Digit</label>
+              <value>premier_digit</value>
+            </item>
+            <item>
+              <label>Purple joy weed</label>
+              <value>purple_joy_weed</value>
+            </item>
+            <item>
+              <label>Purple pigeon</label>
+              <value>purple_pigeon</value>
+            </item>
+            <item>
+              <label>Queensland blue grass</label>
+              <value>qld_blue_grass</value>
+            </item>
+            <item>
+              <label>Raddish</label>
+              <value>raddish</value>
+            </item>
+            <item>
+              <label>Rape</label>
+              <value>rape</value>
+            </item>
+            <item>
+              <label>Red Grass</label>
+              <value>native_red_grass</value>
+            </item>
+            <item>
+              <label>Red Natal species</label>
+              <value>red_natal_sp</value>
+            </item>
+            <item>
+              <label>Rhodes grass</label>
+              <value>rhodes_grass</value>
+            </item>
+            <item>
+              <label>Rhyncosia</label>
+              <value>rhyncosia</value>
+            </item>
+            <item>
+              <label>Rolley polly shrub</label>
+              <value>rolley_polly_shrub</value>
+            </item>
+            <item>
+              <label>Rye-Mix</label>
+              <value>rye_mix</value>
+            </item>
+            <item>
+              <label>Ryegrass</label>
+              <value>ryegrass</value>
+            </item>
+            <item>
+              <label>Ryncosia</label>
+              <value>rhyncosia</value>
+            </item>
+            <item>
+              <label>Sabi grass</label>
+              <value>sabi_grass</value>
+            </item>
+            <item>
+              <label>Sclerolena species</label>
+              <value>sclerolena_sp</value>
+            </item>
+            <item>
+              <label>Sclerolinas</label>
+              <value>sclerolinas</value>
+            </item>
+            <item>
+              <label>Scrubby Stylo</label>
+              <value>scrubby_stylo</value>
+            </item>
+            <item>
+              <label>Seca</label>
+              <value>seca</value>
+            </item>
+            <item>
+              <label>Sedge grass</label>
+              <value>sedge_grass</value>
+            </item>
+            <item>
+              <label>Sedge species</label>
+              <value>sedge_sp</value>
+            </item>
+            <item>
+              <label>Sensitive Plant</label>
+              <value>sensitive_plant</value>
+            </item>
+            <item>
+              <label>Shot Grass</label>
+              <value>shot_grass</value>
+            </item>
+            <item>
+              <label>Sida species</label>
+              <value>sida_sp</value>
+            </item>
+            <item>
+              <label>Signal Grass</label>
+              <value>signal_grass</value>
+            </item>
+            <item>
+              <label>Silk Sorghum</label>
+              <value>silk_sorgham</value>
+            </item>
+            <item>
+              <label>Silky Browntop</label>
+              <value>silky_browntop</value>
+            </item>
+            <item>
+              <label>Silver Grass</label>
+              <value>silver_grass</value>
+            </item>
+            <item>
+              <label>Soda bush</label>
+              <value>soda_bush</value>
+            </item>
+            <item>
+              <label>Soda bush</label>
+              <value>slender_chloris</value>
+            </item>
+            <item>
+              <label>Soft Rolly Polly</label>
+              <value>soft_rolly_polly</value>
+            </item>
+            <item>
+              <label>Sorghum</label>
+              <value>sorghum</value>
+            </item>
+            <item>
+              <label>Spinifex</label>
+              <value>spinifex</value>
+            </item>
+            <item>
+              <label>Spurge</label>
+              <value>spurge</value>
+            </item>
+            <item>
+              <label>Stipa species</label>
+              <value>stipa_sp</value>
+            </item>
+            <item>
+              <label>Strawberry Clover</label>
+              <value>strawberry_clover</value>
+            </item>
+            <item>
+              <label>Stylo</label>
+              <value>stylo</value>
+            </item>
+            <item>
+              <label>Sub Clover</label>
+              <value>sub_clover</value>
+            </item>
+            <item>
+              <label>Sultan Annual Rye</label>
+              <value>sultan_annual_rye</value>
+            </item>
+            <item>
+              <label>Summer grass</label>
+              <value>summer_grass</value>
+            </item>
+            <item>
+              <label>Sunflower daisy</label>
+              <value>sunflower_daisy</value>
+            </item>
+            <item>
+              <label>Switchgrass (panicum native)</label>
+              <value>switchgrass_native</value>
+            </item>
+            <item>
+              <label>Tar vine</label>
+              <value>tar_vine</value>
+            </item>
+            <item>
+              <label>Three awn species</label>
+              <value>three_awn_sp</value>
+            </item>
+            <item>
+              <label>Tick weed</label>
+              <value>tick_weed</value>
+            </item>
+            <item>
+              <label>Tillage Raddish</label>
+              <value>tillage_raddish</value>
+            </item>
+            <item>
+              <label>Triticale</label>
+              <value>triticale</value>
+            </item>
+            <item>
+              <label>Tropical species</label>
+              <value>tropical_spp</value>
+            </item>
+            <item>
+              <label>Tully</label>
+              <value>tully</value>
+            </item>
+            <item>
+              <label>Turnip</label>
+              <value>turnip</value>
+            </item>
+            <item>
+              <label>Unknown species</label>
+              <value>unknown_species</value>
+            </item>
+            <item>
+              <label>Urochloa</label>
+              <value>urochloa</value>
+            </item>
+            <item>
+              <label>Veldt Grass</label>
+              <value>veldt_grass</value>
+            </item>
+            <item>
+              <label>Verbina</label>
+              <value>verbena</value>
+            </item>
+            <item>
+              <label>Verbine</label>
+              <value>verbine</value>
+            </item>
+            <item>
+              <label>Vetch</label>
+              <value>vetch</value>
+            </item>
+            <item>
+              <label>Wallaby Grass</label>
+              <value>native_wallaby_grass</value>
+            </item>
+            <item>
+              <label>Waltheria</label>
+              <value>waltheria</value>
+            </item>
+            <item>
+              <label>Wanderie</label>
+              <value>wanderie</value>
+            </item>
+            <item>
+              <label>Weeping Grass</label>
+              <value>microleena_weeping_grass</value>
+            </item>
+            <item>
+              <label>Weeping Mitchell</label>
+              <value>weeping_mitchell</value>
+            </item>
+            <item>
+              <label>Wheat</label>
+              <value>wheat</value>
+            </item>
+            <item>
+              <label>White Clover</label>
+              <value>white_clover</value>
+            </item>
+            <item>
+              <label>White speargrass</label>
+              <value>white_speargrass</value>
+            </item>
+            <item>
+              <label>Whitegrass</label>
+              <value>whitegrass</value>
+            </item>
+            <item>
+              <label>Wild rice</label>
+              <value>wild_rice</value>
+            </item>
+            <item>
+              <label>Windmill Grass</label>
+              <value>windmaill_grass</value>
+            </item>
+            <item>
+              <label>Winter Grass</label>
+              <value>winter_grass</value>
+            </item>
+            <item>
+              <label>Wire grass species</label>
+              <value>wire_grass_sp</value>
+            </item>
+            <item>
+              <label>Wooly Butt</label>
+              <value>wooly_butt</value>
+            </item>
+            <item>
+              <label>Wooly Copper burr</label>
+              <value>wooly_copper_burr</value>
+            </item>
+            <item>
+              <label>Wooly Oat</label>
+              <value>wooly_oat</value>
+            </item>
+            <item>
+              <label>Wynn cassia</label>
+              <value>wynn_cassia</value>
+            </item>
+            <item>
+              <label>Zig Zag grass</label>
+              <value>zig_zag_grass</value>
+            </item>
+          </select1>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/sub_dominant_species_q">
+            <label>Sub-dominant Species</label>
+            <hint>&lt;p&gt;Please use the common name of species&lt;/p&gt;</hint>
+          </input>
+          <input appearance="multiline" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/quadrat_comments">
+            <label>Quadrat Comments</label>
+          </input>
+          <group appearance="minimal compact" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q">
+            <label>Quadrat Laboratory Results</label>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q/lab_dry_matter_q">
+              <label>Quadrat Lab Dry Matter (%)</label>
+              <hint>&lt;p&gt;From drying (lab, oven or microwave) process&lt;/p&gt;</hint>
+            </input>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/lab_results_q/lab_tsdm_kgha_q">
+              <label>Quadrat Calculated TSDM (kg/Ha)</label>
+              <hint>&lt;p&gt;Quadrat TSDM calculated based on wet weights (view only)&lt;/p&gt;</hint>
+            </input>
+          </group>
+          <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/note_walk">
+            <label>&lt;b&gt;&lt;font color="red"&gt;WALK TO THE NEXT LOCATION BEFORE CLICKING '+' BUTTON&lt;/font&gt;&lt;/b&gt;</label>
+            <hint>&lt;p&gt;Walk to next location BEFORE clicking the '+' button, as this will record the next GPS location coordinates&lt;/p&gt;</hint>
+          </input>
+          <group appearance="minimal compact" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location">
+            <label>Auto Populated (read only)</label>
+            <select1 appearance="horizontal" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/qaudrat_type">
+              <label>Quadrat Size</label>
+              <item>
+                <label>Not Applicable</label>
+                <value>quadrat_na</value>
+              </item>
+              <item>
+                <label>0.25 Quadrat (500mm)</label>
+                <value>quadrat_025</value>
+              </item>
+              <item>
+                <label>0.10 Quadrat (317mm)</label>
+                <value>quadrat_010</value>
+              </item>
+              <item>
+                <label>1m Quadrat (1000mm)</label>
+                <value>quadrat_100</value>
+              </item>
+              <item>
+                <label>0.5 Quadrat (707mm)</label>
+                <value>quadrat_050</value>
+              </item>
+            </select1>
+            <select1 appearance="horizontal" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_sample_type">
+              <label>Quadrat Sample Type</label>
+              <item>
+                <label>Pasture Cuts</label>
+                <value>wet_sample</value>
+              </item>
+              <item>
+                <label>Visual Estimates</label>
+                <value>dry_sample</value>
+              </item>
+              <item>
+                <label>Platemeter Sampling</label>
+                <value>platemeter_sample</value>
+              </item>
+              <item>
+                <label>Visual Estimates with Woody Cover</label>
+                <value>woody_dry_sample</value>
+              </item>
+              <item>
+                <label>Pasture Cuts with Woody Cover</label>
+                <value>woody_wet_sample</value>
+              </item>
+              <item>
+                <label>Platemeter Calibration</label>
+                <value>platemeter_calibration</value>
+              </item>
+              <item>
+                <label>Pasture Cuts with Quadrat Detail</label>
+                <value>wet_sample_q</value>
+              </item>
+            </select1>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_image_gps">
+              <label>Quadrat Image GPS</label>
+            </input>
+            <input esri:style="method=vertex" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_point">
+              <label>Quadrat Location</label>
+            </input>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_gps_y">
+              <label>Quadrat GPS Lat</label>
+            </input>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_gps_x">
+              <label>Quadrat GPS Long</label>
+            </input>
+            <select1 ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/quadrat_status">
+              <label>Quadrat Status</label>
+              <hint>&lt;p&gt;status related to calibration purpose&lt;/p&gt;</hint>
+              <item>
+                <label>Not Using</label>
+                <value>not_used</value>
+              </item>
+              <item>
+                <label>Ready for Calibration</label>
+                <value>ready</value>
+              </item>
+            </select1>
+            <input appearance="hidden" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/conversion_factor">
+              <label>Conversion Factor (for Wet Weights)</label>
+            </input>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/sample_date">
+              <label>Sample Date</label>
+            </input>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/tsdm_variance_q">
+              <label>Field Estimate TSDM Variance</label>
+              <hint>&lt;p&gt;Field TSDM variance from Transect Mean&lt;/p&gt;</hint>
+            </input>
+            <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/lab_tsdm_variance_q">
+              <label>Quadrat Lab TSDM Variance</label>
+              <hint>&lt;p&gt;Quadrat TSDM variance from Lab TSDM Average&lt;/p&gt;</hint>
+            </input>
+            <input appearance="hidden" ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_quadrat/pull_location/valid_record_q">
+              <label>Valid Record</label>
+            </input>
+          </group>
+        </repeat>
+      </group>
+      <group ref="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site">
+        <label>Woody Cover Summary</label>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/mature_trees_count">
+          <label>Mature Trees Count</label>
+          <hint>&lt;/p&gt;Count all trees using dendrometer sight method (360 degree radius) &lt;/p&gt;</hint>
+        </input>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/regrowth_count">
+          <label>Regrowth Count</label>
+          <hint>&lt;/p&gt;Count all regrowth (1m either side of transect)&lt;/p&gt;</hint>
+        </input>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/regrowth_average_diameter_mm">
+          <label>Regrowth Basal Diameter (mm)</label>
+          <hint>&lt;/p&gt;Estimate average basal diameter at 30cm above ground (1m either side of transect)&lt;/p&gt;</hint>
+        </input>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/shrubs_count">
+          <label>Shrubs Count</label>
+          <hint>&lt;/p&gt;Count all shrubs &gt;1m tall (1m either side of transect)&lt;/p&gt;</hint>
+        </input>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/shrubs_average_diameter_mm">
+          <label>Shrubs Basal Diameter (mm)</label>
+          <hint>&lt;/p&gt;Estimate average basal diameter at 30cm above ground for all shrubs &gt;1m tall (1m either side of transect)&lt;/p&gt;</hint>
+        </input>
+        <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/woody_cover_site/canopy_height_m">
+          <label>Estimate Canopy Height (m)</label>
+          <hint>&lt;p&gt;Average tree canopy height in whole meters&lt;/p&gt;</hint>
+        </input>
+      </group>
+      <input appearance="hidden" ref="/Cibo___Pasture_Biomass_Collector/transect_information/sum_tsdm">
+        <label>Sum of Quadrat (kg/Ha)</label>
+        <hint>&lt;p&gt;View Only&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/tsdm_kgha">
+        <label>Average TSDM (kg/Ha) for Transect</label>
+        <hint>&lt;p&gt;Average calculated based on transect point data (view only)&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/stock_days_dse">
+        <label>Transect Estimate Stock Days (as DSE/Ha)</label>
+        <hint>&lt;p&gt;Optional - Transect Estimate for Grazing Days (ie: Stock, LSU etc) with LSU = 8 DSE&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/transect_information/pasture_height_average">
+        <label>Average Pasture Height (cm)</label>
+        <hint>&lt;p&gt;Pasture Height (Average of Transect)&lt;/p&gt;</hint>
+      </input>
+    </group>
+    <group appearance="minimal compact" ref="/Cibo___Pasture_Biomass_Collector/lab_results">
+      <label>Transect Laboratory Results</label>
+      <input ref="/Cibo___Pasture_Biomass_Collector/lab_results/average_wetweight_grams">
+        <label>Transect Wet Weights Average (kg/Ha)</label>
+        <hint>&lt;p&gt;Average calculated based on quadrant data (view only)&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/lab_results/lab_dry_matter">
+        <label>Lab Dry Matter (%) for Transect</label>
+        <hint>&lt;p&gt;From drying (lab, oven or microwave) process&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_kgha">
+        <label>Transect Calculated Average TSDM (kg/Ha)</label>
+        <hint>&lt;p&gt;Transect average calculated based on quadrant wet weights (view only)&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_variance">
+        <label>Calculated Average TSDM Variance</label>
+        <hint>&lt;p&gt;Transect lab Average TSDM calculated variance &lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/lab_results/lab_tsdm_deviation">
+        <label>Calculated Average TSDM Deviation</label>
+        <hint>&lt;p&gt;Transect lab Average TSDM calculated Standard Deviation&lt;/p&gt;</hint>
+      </input>
+    </group>
+    <group appearance="minimal compact" ref="/Cibo___Pasture_Biomass_Collector/pasture_feed_test">
+      <label>Pasture Feed Test</label>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pasture_feed_test/feed_me_mjkg">
+        <label>Metabolisable Energy (MJ ME/kg)</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pasture_feed_test/feed_protein_percentage">
+        <label>Crude Protein (%)</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pasture_feed_test/feed_ndf_percentage">
+        <label>Neutral Detergent Fibre (%)</label>
+      </input>
+    </group>
+    <group ref="/Cibo___Pasture_Biomass_Collector/pasture_information">
+      <label>Transect Summary</label>
+      <select1 appearance="autocomplete" ref="/Cibo___Pasture_Biomass_Collector/pasture_information/dominant_species">
+        <label>Dominant Species</label>
+        <hint>&lt;p&gt;Please use the common name of species. If ground use 'Bare' and if not listed use 'Other'&lt;/p&gt;</hint>
+        <item>
+          <label>Angleton</label>
+          <value>angleton</value>
+        </item>
+        <item>
+          <label>Annual grasses</label>
+          <value>annual_grasses</value>
+        </item>
+        <item>
+          <label>Annual sorghum</label>
+          <value>annual_sorghum</value>
+        </item>
+        <item>
+          <label>Annual verbine</label>
+          <value>annual_verbine</value>
+        </item>
+        <item>
+          <label>Aristida species</label>
+          <value>aristida_sp</value>
+        </item>
+        <item>
+          <label>Asbestos grass</label>
+          <value>asbestos_grass</value>
+        </item>
+        <item>
+          <label>Australian Drop Seed</label>
+          <value>australian_drop_seed</value>
+        </item>
+        <item>
+          <label>Balansa Clover</label>
+          <value>balansa_clover</value>
+        </item>
+        <item>
+          <label>Bambatsi Panic</label>
+          <value>bambatsi_panic</value>
+        </item>
+        <item>
+          <label>Bandicoot Grass</label>
+          <value>bandicoot_grass</value>
+        </item>
+        <item>
+          <label>Barb wire grass</label>
+          <value>barbwire_grass</value>
+        </item>
+        <item>
+          <label>Barley</label>
+          <value>barley</value>
+        </item>
+        <item>
+          <label>Barley Grass</label>
+          <value>barley_grass</value>
+        </item>
+        <item>
+          <label>Barley Mitchell</label>
+          <value>barley_mitchell</value>
+        </item>
+        <item>
+          <label>Bisset Bluegrass</label>
+          <value>bisset_bluegrass</value>
+        </item>
+        <item>
+          <label>Black Oats</label>
+          <value>black_oats</value>
+        </item>
+        <item>
+          <label>Black rolly poly</label>
+          <value>black_rolly_poly</value>
+        </item>
+        <item>
+          <label>Black speargrass</label>
+          <value>black_speargrass</value>
+        </item>
+        <item>
+          <label>Bladder ketmia</label>
+          <value>bladder_ketmia</value>
+        </item>
+        <item>
+          <label>Bluebush</label>
+          <value>bluebush</value>
+        </item>
+        <item>
+          <label>Bluegrass</label>
+          <value>bluegrass</value>
+        </item>
+        <item>
+          <label>Bluegrass Tassel</label>
+          <value>bluegrass_tassel</value>
+        </item>
+        <item>
+          <label>Bottle washer grass</label>
+          <value>bottle_washer_grass</value>
+        </item>
+        <item>
+          <label>Broadleaf</label>
+          <value>broadleaf</value>
+        </item>
+        <item>
+          <label>Broadleaf Mix</label>
+          <value>broadleaf_mix</value>
+        </item>
+        <item>
+          <label>Brown top</label>
+          <value>brown_top</value>
+        </item>
+        <item>
+          <label>Buffel grass</label>
+          <value>buffel_grass</value>
+        </item>
+        <item>
+          <label>Bull Mitchell</label>
+          <value>bull_mitchell</value>
+        </item>
+        <item>
+          <label>Button grass</label>
+          <value>button_grass</value>
+        </item>
+        <item>
+          <label>Canola</label>
+          <value>canola</value>
+        </item>
+        <item>
+          <label>Canola 970</label>
+          <value>canola_970</value>
+        </item>
+        <item>
+          <label>Capeweed</label>
+          <value>capeweed</value>
+        </item>
+        <item>
+          <label>Cereals</label>
+          <value>cereals</value>
+        </item>
+        <item>
+          <label>Chickory</label>
+          <value>chickory</value>
+        </item>
+        <item>
+          <label>Chloris</label>
+          <value>chloris</value>
+        </item>
+        <item>
+          <label>Cida</label>
+          <value>cida</value>
+        </item>
+        <item>
+          <label>Cilitors</label>
+          <value>cilitors</value>
+        </item>
+        <item>
+          <label>Clover</label>
+          <value>clover</value>
+        </item>
+        <item>
+          <label>Cocksfoot</label>
+          <value>cocksfoot</value>
+        </item>
+        <item>
+          <label>Comb grass</label>
+          <value>comb_grass</value>
+        </item>
+        <item>
+          <label>Common joy weed</label>
+          <value>common_joy_weed</value>
+        </item>
+        <item>
+          <label>Copper Burr</label>
+          <value>copper_burr</value>
+        </item>
+        <item>
+          <label>Cotton Bush</label>
+          <value>cotton_bush</value>
+        </item>
+        <item>
+          <label>Cotton Panic</label>
+          <value>cotton_panic</value>
+        </item>
+        <item>
+          <label>Couch grass</label>
+          <value>couch_grass</value>
+        </item>
+        <item>
+          <label>Cow vine</label>
+          <value>cow_vine</value>
+        </item>
+        <item>
+          <label>Creeping blues</label>
+          <value>creeping_blues</value>
+        </item>
+        <item>
+          <label>Creeping lantana</label>
+          <value>creeping_lantana</value>
+        </item>
+        <item>
+          <label>Crop Stubble</label>
+          <value>crop_stubble</value>
+        </item>
+        <item>
+          <label>Cup grass</label>
+          <value>cup_grass</value>
+        </item>
+        <item>
+          <label>Curly bluegrass</label>
+          <value>curly_bluegrass</value>
+        </item>
+        <item>
+          <label>Curly Mitchell</label>
+          <value>curly_mitchell</value>
+        </item>
+        <item>
+          <label>Delicate lovegrass</label>
+          <value>delicate_lovegrass</value>
+        </item>
+        <item>
+          <label>Digitaria</label>
+          <value>digitaria</value>
+        </item>
+        <item>
+          <label>Downs sorghum</label>
+          <value>downs_sorghum</value>
+        </item>
+        <item>
+          <label>Drop seed</label>
+          <value>drop_seed</value>
+        </item>
+        <item>
+          <label>Dry Clover</label>
+          <value>dry_clover</value>
+        </item>
+        <item>
+          <label>Emu foot</label>
+          <value>emu_foot</value>
+        </item>
+        <item>
+          <label>Eragrostis species</label>
+          <value>eragrostis_spp</value>
+        </item>
+        <item>
+          <label>Erodium</label>
+          <value>erodium</value>
+        </item>
+        <item>
+          <label>Fairy grass</label>
+          <value>fairy_grass</value>
+        </item>
+        <item>
+          <label>Feathertop</label>
+          <value>feathertop</value>
+        </item>
+        <item>
+          <label>Feathertop wiregrass</label>
+          <value>feathertop_wiregrass</value>
+        </item>
+        <item>
+          <label>Fennel</label>
+          <value>fennel</value>
+        </item>
+        <item>
+          <label>Fescue</label>
+          <value>fescue</value>
+        </item>
+        <item>
+          <label>Fire grass</label>
+          <value>fire_grass</value>
+        </item>
+        <item>
+          <label>Flathead burr</label>
+          <value>flathead_burr</value>
+        </item>
+        <item>
+          <label>Flemmings bush</label>
+          <value>flemmings_bush</value>
+        </item>
+        <item>
+          <label>Flinders grass</label>
+          <value>flinders_grass</value>
+        </item>
+        <item>
+          <label>Fluffy Gomphrena</label>
+          <value>fluffy_gomphrena</value>
+        </item>
+        <item>
+          <label>Forage sorghum</label>
+          <value>forage_sorghum</value>
+        </item>
+        <item>
+          <label>Forbes</label>
+          <value>forbes</value>
+        </item>
+        <item>
+          <label>Forest Bluegrass</label>
+          <value>forest_bluegrass</value>
+        </item>
+        <item>
+          <label>Fringed glycine</label>
+          <value>frindge_glycine</value>
+        </item>
+        <item>
+          <label>Galvanised Burr</label>
+          <value>galvanised_burr</value>
+        </item>
+        <item>
+          <label>Gamba Grass</label>
+          <value>gamba_grass</value>
+        </item>
+        <item>
+          <label>Gatton Panic</label>
+          <value>gatton_panic</value>
+        </item>
+        <item>
+          <label>Georgina Lucerne</label>
+          <value>georgina_lucerne</value>
+        </item>
+        <item>
+          <label>Geranium</label>
+          <value>geranium</value>
+        </item>
+        <item>
+          <label>Giathead burr</label>
+          <value>giathead_burr</value>
+        </item>
+        <item>
+          <label>Gidgee burr</label>
+          <value>gidgee_burr</value>
+        </item>
+        <item>
+          <label>Goathead burr</label>
+          <value>goathead_burr</value>
+        </item>
+        <item>
+          <label>Golden beard grass</label>
+          <value>golden_beard_grass</value>
+        </item>
+        <item>
+          <label>Green Panic</label>
+          <value>green_panic</value>
+        </item>
+        <item>
+          <label>Hairy Panic</label>
+          <value>hairy_panic</value>
+        </item>
+        <item>
+          <label>Herbages</label>
+          <value>herbages</value>
+        </item>
+        <item>
+          <label>Hoop Mitchell</label>
+          <value>hoop_mitchell</value>
+        </item>
+        <item>
+          <label>Humidicola Tully</label>
+          <value>humidicola_tully</value>
+        </item>
+        <item>
+          <label>Indian couch</label>
+          <value>indian_couch</value>
+        </item>
+        <item>
+          <label>Italian Ryegrass</label>
+          <value>italian_ryegrass</value>
+        </item>
+        <item>
+          <label>Joyweed</label>
+          <value>joyweed</value>
+        </item>
+        <item>
+          <label>Kangaroo grass</label>
+          <value>kangaroo_grass</value>
+        </item>
+        <item>
+          <label>Kerosine grass</label>
+          <value>kerosine_grass</value>
+        </item>
+        <item>
+          <label>Kikuyu</label>
+          <value>kikuyu</value>
+        </item>
+        <item>
+          <label>Leaf Litter</label>
+          <value>leaf_litter</value>
+        </item>
+        <item>
+          <label>Limestone bottlewasher</label>
+          <value>limestone_bottlewasher</value>
+        </item>
+        <item>
+          <label>Liquiorice bush</label>
+          <value>liquiorice_bush</value>
+        </item>
+        <item>
+          <label>Litter and Bare</label>
+          <value>bare_litter</value>
+        </item>
+        <item>
+          <label>Long spine sclerolena</label>
+          <value>long_spine_sclerolena</value>
+        </item>
+        <item>
+          <label>Love grass</label>
+          <value>love_grass</value>
+        </item>
+        <item>
+          <label>Lovegrass species</label>
+          <value>lovegrass_species</value>
+        </item>
+        <item>
+          <label>Low-THC Hemp</label>
+          <value>hemp</value>
+        </item>
+        <item>
+          <label>Lucerne</label>
+          <value>lucerne</value>
+        </item>
+        <item>
+          <label>Lucerne Mix</label>
+          <value>lucerne_mix</value>
+        </item>
+        <item>
+          <label>Medic</label>
+          <value>medic</value>
+        </item>
+        <item>
+          <label>Mekong Cresantha</label>
+          <value>mekong_cresantha</value>
+        </item>
+        <item>
+          <label>Millet</label>
+          <value>millet</value>
+        </item>
+        <item>
+          <label>Mitchell Grass Species</label>
+          <value>mitchell_grass_sp</value>
+        </item>
+        <item>
+          <label>Mixed</label>
+          <value>mixed</value>
+        </item>
+        <item>
+          <label>Mulga Grass</label>
+          <value>mulga_grass</value>
+        </item>
+        <item>
+          <label>Mulla Mulla</label>
+          <value>mulla_mulla</value>
+        </item>
+        <item>
+          <label>Munyeroo</label>
+          <value>munyeroo</value>
+        </item>
+        <item>
+          <label>Nardoo</label>
+          <value>nardoo</value>
+        </item>
+        <item>
+          <label>Native</label>
+          <value>native</value>
+        </item>
+        <item>
+          <label>Native Couch</label>
+          <value>native_couch</value>
+        </item>
+        <item>
+          <label>Native jute</label>
+          <value>native_jute</value>
+        </item>
+        <item>
+          <label>Native millet</label>
+          <value>native_millet</value>
+        </item>
+        <item>
+          <label>Native sorghum</label>
+          <value>native_sorghum</value>
+        </item>
+        <item>
+          <label>Neptunia</label>
+          <value>neptunia</value>
+        </item>
+        <item>
+          <label>Nut grass</label>
+          <value>nut_grass</value>
+        </item>
+        <item>
+          <label>Oats</label>
+          <value>oats</value>
+        </item>
+        <item>
+          <label>Onion Weed</label>
+          <value>onion_weed</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other_</value>
+        </item>
+        <item>
+          <label>Paper Onion Vine</label>
+          <value>paper_onion_vine</value>
+        </item>
+        <item>
+          <label>Parakeelya</label>
+          <value>parakeelya</value>
+        </item>
+        <item>
+          <label>Patterson�s Curse</label>
+          <value>pattersons_curse</value>
+        </item>
+        <item>
+          <label>Pea bush</label>
+          <value>pea_bush</value>
+        </item>
+        <item>
+          <label>Peach vine</label>
+          <value>peach_vine</value>
+        </item>
+        <item>
+          <label>Pepper grass</label>
+          <value>pepper_grass</value>
+        </item>
+        <item>
+          <label>Perennial grass sp</label>
+          <value>perennial_grass_sp</value>
+        </item>
+        <item>
+          <label>Perennial Ryegrass</label>
+          <value>perennial_ryegrass</value>
+        </item>
+        <item>
+          <label>Phalaris</label>
+          <value>phalaris</value>
+        </item>
+        <item>
+          <label>Phalaris Mix</label>
+          <value>phalaris_mix</value>
+        </item>
+        <item>
+          <label>Pigweed</label>
+          <value>pigweed</value>
+        </item>
+        <item>
+          <label>Plainsgrass</label>
+          <value>plainsgrass</value>
+        </item>
+        <item>
+          <label>Plume Sorghum</label>
+          <value>plume_sorghum</value>
+        </item>
+        <item>
+          <label>Premier Digit</label>
+          <value>premier_digit</value>
+        </item>
+        <item>
+          <label>Purple joy weed</label>
+          <value>purple_joy_weed</value>
+        </item>
+        <item>
+          <label>Purple pigeon</label>
+          <value>purple_pigeon</value>
+        </item>
+        <item>
+          <label>Queensland blue grass</label>
+          <value>qld_blue_grass</value>
+        </item>
+        <item>
+          <label>Raddish</label>
+          <value>raddish</value>
+        </item>
+        <item>
+          <label>Rape</label>
+          <value>rape</value>
+        </item>
+        <item>
+          <label>Red Grass</label>
+          <value>native_red_grass</value>
+        </item>
+        <item>
+          <label>Red Natal species</label>
+          <value>red_natal_sp</value>
+        </item>
+        <item>
+          <label>Rhodes grass</label>
+          <value>rhodes_grass</value>
+        </item>
+        <item>
+          <label>Rhyncosia</label>
+          <value>rhyncosia</value>
+        </item>
+        <item>
+          <label>Rolley polly shrub</label>
+          <value>rolley_polly_shrub</value>
+        </item>
+        <item>
+          <label>Rye-Mix</label>
+          <value>rye_mix</value>
+        </item>
+        <item>
+          <label>Ryegrass</label>
+          <value>ryegrass</value>
+        </item>
+        <item>
+          <label>Ryncosia</label>
+          <value>rhyncosia</value>
+        </item>
+        <item>
+          <label>Sabi grass</label>
+          <value>sabi_grass</value>
+        </item>
+        <item>
+          <label>Sclerolena species</label>
+          <value>sclerolena_sp</value>
+        </item>
+        <item>
+          <label>Sclerolinas</label>
+          <value>sclerolinas</value>
+        </item>
+        <item>
+          <label>Scrubby Stylo</label>
+          <value>scrubby_stylo</value>
+        </item>
+        <item>
+          <label>Seca</label>
+          <value>seca</value>
+        </item>
+        <item>
+          <label>Sedge grass</label>
+          <value>sedge_grass</value>
+        </item>
+        <item>
+          <label>Sedge species</label>
+          <value>sedge_sp</value>
+        </item>
+        <item>
+          <label>Sensitive Plant</label>
+          <value>sensitive_plant</value>
+        </item>
+        <item>
+          <label>Shot Grass</label>
+          <value>shot_grass</value>
+        </item>
+        <item>
+          <label>Sida species</label>
+          <value>sida_sp</value>
+        </item>
+        <item>
+          <label>Signal Grass</label>
+          <value>signal_grass</value>
+        </item>
+        <item>
+          <label>Silk Sorghum</label>
+          <value>silk_sorgham</value>
+        </item>
+        <item>
+          <label>Silky Browntop</label>
+          <value>silky_browntop</value>
+        </item>
+        <item>
+          <label>Silver Grass</label>
+          <value>silver_grass</value>
+        </item>
+        <item>
+          <label>Soda bush</label>
+          <value>soda_bush</value>
+        </item>
+        <item>
+          <label>Soda bush</label>
+          <value>slender_chloris</value>
+        </item>
+        <item>
+          <label>Soft Rolly Polly</label>
+          <value>soft_rolly_polly</value>
+        </item>
+        <item>
+          <label>Sorghum</label>
+          <value>sorghum</value>
+        </item>
+        <item>
+          <label>Spinifex</label>
+          <value>spinifex</value>
+        </item>
+        <item>
+          <label>Spurge</label>
+          <value>spurge</value>
+        </item>
+        <item>
+          <label>Stipa species</label>
+          <value>stipa_sp</value>
+        </item>
+        <item>
+          <label>Strawberry Clover</label>
+          <value>strawberry_clover</value>
+        </item>
+        <item>
+          <label>Stylo</label>
+          <value>stylo</value>
+        </item>
+        <item>
+          <label>Sub Clover</label>
+          <value>sub_clover</value>
+        </item>
+        <item>
+          <label>Sultan Annual Rye</label>
+          <value>sultan_annual_rye</value>
+        </item>
+        <item>
+          <label>Summer grass</label>
+          <value>summer_grass</value>
+        </item>
+        <item>
+          <label>Sunflower daisy</label>
+          <value>sunflower_daisy</value>
+        </item>
+        <item>
+          <label>Switchgrass (panicum native)</label>
+          <value>switchgrass_native</value>
+        </item>
+        <item>
+          <label>Tar vine</label>
+          <value>tar_vine</value>
+        </item>
+        <item>
+          <label>Three awn species</label>
+          <value>three_awn_sp</value>
+        </item>
+        <item>
+          <label>Tick weed</label>
+          <value>tick_weed</value>
+        </item>
+        <item>
+          <label>Tillage Raddish</label>
+          <value>tillage_raddish</value>
+        </item>
+        <item>
+          <label>Triticale</label>
+          <value>triticale</value>
+        </item>
+        <item>
+          <label>Tropical species</label>
+          <value>tropical_spp</value>
+        </item>
+        <item>
+          <label>Tully</label>
+          <value>tully</value>
+        </item>
+        <item>
+          <label>Turnip</label>
+          <value>turnip</value>
+        </item>
+        <item>
+          <label>Unknown species</label>
+          <value>unknown_species</value>
+        </item>
+        <item>
+          <label>Urochloa</label>
+          <value>urochloa</value>
+        </item>
+        <item>
+          <label>Veldt Grass</label>
+          <value>veldt_grass</value>
+        </item>
+        <item>
+          <label>Verbina</label>
+          <value>verbena</value>
+        </item>
+        <item>
+          <label>Verbine</label>
+          <value>verbine</value>
+        </item>
+        <item>
+          <label>Vetch</label>
+          <value>vetch</value>
+        </item>
+        <item>
+          <label>Wallaby Grass</label>
+          <value>native_wallaby_grass</value>
+        </item>
+        <item>
+          <label>Waltheria</label>
+          <value>waltheria</value>
+        </item>
+        <item>
+          <label>Wanderie</label>
+          <value>wanderie</value>
+        </item>
+        <item>
+          <label>Weeping Grass</label>
+          <value>microleena_weeping_grass</value>
+        </item>
+        <item>
+          <label>Weeping Mitchell</label>
+          <value>weeping_mitchell</value>
+        </item>
+        <item>
+          <label>Wheat</label>
+          <value>wheat</value>
+        </item>
+        <item>
+          <label>White Clover</label>
+          <value>white_clover</value>
+        </item>
+        <item>
+          <label>White speargrass</label>
+          <value>white_speargrass</value>
+        </item>
+        <item>
+          <label>Whitegrass</label>
+          <value>whitegrass</value>
+        </item>
+        <item>
+          <label>Wild rice</label>
+          <value>wild_rice</value>
+        </item>
+        <item>
+          <label>Windmill Grass</label>
+          <value>windmaill_grass</value>
+        </item>
+        <item>
+          <label>Winter Grass</label>
+          <value>winter_grass</value>
+        </item>
+        <item>
+          <label>Wire grass species</label>
+          <value>wire_grass_sp</value>
+        </item>
+        <item>
+          <label>Wooly Butt</label>
+          <value>wooly_butt</value>
+        </item>
+        <item>
+          <label>Wooly Copper burr</label>
+          <value>wooly_copper_burr</value>
+        </item>
+        <item>
+          <label>Wooly Oat</label>
+          <value>wooly_oat</value>
+        </item>
+        <item>
+          <label>Wynn cassia</label>
+          <value>wynn_cassia</value>
+        </item>
+        <item>
+          <label>Zig Zag grass</label>
+          <value>zig_zag_grass</value>
+        </item>
+      </select1>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pasture_information/dominant_species_other">
+        <label>Dominant Species - Other</label>
+        <hint>&lt;p&gt;other species not listed above- free text&lt;/p&gt;</hint>
+      </input>
+      <select1 appearance="autocomplete" ref="/Cibo___Pasture_Biomass_Collector/pasture_information/co_dominant_species">
+        <label>Co-dominant Species</label>
+        <hint>&lt;p&gt;Please use the common name of species&lt;/p&gt;</hint>
+        <item>
+          <label>Angleton</label>
+          <value>angleton</value>
+        </item>
+        <item>
+          <label>Annual grasses</label>
+          <value>annual_grasses</value>
+        </item>
+        <item>
+          <label>Annual sorghum</label>
+          <value>annual_sorghum</value>
+        </item>
+        <item>
+          <label>Annual verbine</label>
+          <value>annual_verbine</value>
+        </item>
+        <item>
+          <label>Aristida species</label>
+          <value>aristida_sp</value>
+        </item>
+        <item>
+          <label>Asbestos grass</label>
+          <value>asbestos_grass</value>
+        </item>
+        <item>
+          <label>Australian Drop Seed</label>
+          <value>australian_drop_seed</value>
+        </item>
+        <item>
+          <label>Balansa Clover</label>
+          <value>balansa_clover</value>
+        </item>
+        <item>
+          <label>Bambatsi Panic</label>
+          <value>bambatsi_panic</value>
+        </item>
+        <item>
+          <label>Bandicoot Grass</label>
+          <value>bandicoot_grass</value>
+        </item>
+        <item>
+          <label>Barb wire grass</label>
+          <value>barbwire_grass</value>
+        </item>
+        <item>
+          <label>Barley</label>
+          <value>barley</value>
+        </item>
+        <item>
+          <label>Barley Grass</label>
+          <value>barley_grass</value>
+        </item>
+        <item>
+          <label>Barley Mitchell</label>
+          <value>barley_mitchell</value>
+        </item>
+        <item>
+          <label>Bisset Bluegrass</label>
+          <value>bisset_bluegrass</value>
+        </item>
+        <item>
+          <label>Black Oats</label>
+          <value>black_oats</value>
+        </item>
+        <item>
+          <label>Black rolly poly</label>
+          <value>black_rolly_poly</value>
+        </item>
+        <item>
+          <label>Black speargrass</label>
+          <value>black_speargrass</value>
+        </item>
+        <item>
+          <label>Bladder ketmia</label>
+          <value>bladder_ketmia</value>
+        </item>
+        <item>
+          <label>Bluebush</label>
+          <value>bluebush</value>
+        </item>
+        <item>
+          <label>Bluegrass</label>
+          <value>bluegrass</value>
+        </item>
+        <item>
+          <label>Bluegrass Tassel</label>
+          <value>bluegrass_tassel</value>
+        </item>
+        <item>
+          <label>Bottle washer grass</label>
+          <value>bottle_washer_grass</value>
+        </item>
+        <item>
+          <label>Broadleaf</label>
+          <value>broadleaf</value>
+        </item>
+        <item>
+          <label>Broadleaf Mix</label>
+          <value>broadleaf_mix</value>
+        </item>
+        <item>
+          <label>Brown top</label>
+          <value>brown_top</value>
+        </item>
+        <item>
+          <label>Buffel grass</label>
+          <value>buffel_grass</value>
+        </item>
+        <item>
+          <label>Bull Mitchell</label>
+          <value>bull_mitchell</value>
+        </item>
+        <item>
+          <label>Button grass</label>
+          <value>button_grass</value>
+        </item>
+        <item>
+          <label>Canola</label>
+          <value>canola</value>
+        </item>
+        <item>
+          <label>Canola 970</label>
+          <value>canola_970</value>
+        </item>
+        <item>
+          <label>Capeweed</label>
+          <value>capeweed</value>
+        </item>
+        <item>
+          <label>Cereals</label>
+          <value>cereals</value>
+        </item>
+        <item>
+          <label>Chickory</label>
+          <value>chickory</value>
+        </item>
+        <item>
+          <label>Chloris</label>
+          <value>chloris</value>
+        </item>
+        <item>
+          <label>Cida</label>
+          <value>cida</value>
+        </item>
+        <item>
+          <label>Cilitors</label>
+          <value>cilitors</value>
+        </item>
+        <item>
+          <label>Clover</label>
+          <value>clover</value>
+        </item>
+        <item>
+          <label>Cocksfoot</label>
+          <value>cocksfoot</value>
+        </item>
+        <item>
+          <label>Comb grass</label>
+          <value>comb_grass</value>
+        </item>
+        <item>
+          <label>Common joy weed</label>
+          <value>common_joy_weed</value>
+        </item>
+        <item>
+          <label>Copper Burr</label>
+          <value>copper_burr</value>
+        </item>
+        <item>
+          <label>Cotton Bush</label>
+          <value>cotton_bush</value>
+        </item>
+        <item>
+          <label>Cotton Panic</label>
+          <value>cotton_panic</value>
+        </item>
+        <item>
+          <label>Couch grass</label>
+          <value>couch_grass</value>
+        </item>
+        <item>
+          <label>Cow vine</label>
+          <value>cow_vine</value>
+        </item>
+        <item>
+          <label>Creeping blues</label>
+          <value>creeping_blues</value>
+        </item>
+        <item>
+          <label>Creeping lantana</label>
+          <value>creeping_lantana</value>
+        </item>
+        <item>
+          <label>Crop Stubble</label>
+          <value>crop_stubble</value>
+        </item>
+        <item>
+          <label>Cup grass</label>
+          <value>cup_grass</value>
+        </item>
+        <item>
+          <label>Curly bluegrass</label>
+          <value>curly_bluegrass</value>
+        </item>
+        <item>
+          <label>Curly Mitchell</label>
+          <value>curly_mitchell</value>
+        </item>
+        <item>
+          <label>Delicate lovegrass</label>
+          <value>delicate_lovegrass</value>
+        </item>
+        <item>
+          <label>Digitaria</label>
+          <value>digitaria</value>
+        </item>
+        <item>
+          <label>Downs sorghum</label>
+          <value>downs_sorghum</value>
+        </item>
+        <item>
+          <label>Drop seed</label>
+          <value>drop_seed</value>
+        </item>
+        <item>
+          <label>Dry Clover</label>
+          <value>dry_clover</value>
+        </item>
+        <item>
+          <label>Emu foot</label>
+          <value>emu_foot</value>
+        </item>
+        <item>
+          <label>Eragrostis species</label>
+          <value>eragrostis_spp</value>
+        </item>
+        <item>
+          <label>Erodium</label>
+          <value>erodium</value>
+        </item>
+        <item>
+          <label>Fairy grass</label>
+          <value>fairy_grass</value>
+        </item>
+        <item>
+          <label>Feathertop</label>
+          <value>feathertop</value>
+        </item>
+        <item>
+          <label>Feathertop wiregrass</label>
+          <value>feathertop_wiregrass</value>
+        </item>
+        <item>
+          <label>Fennel</label>
+          <value>fennel</value>
+        </item>
+        <item>
+          <label>Fescue</label>
+          <value>fescue</value>
+        </item>
+        <item>
+          <label>Fire grass</label>
+          <value>fire_grass</value>
+        </item>
+        <item>
+          <label>Flathead burr</label>
+          <value>flathead_burr</value>
+        </item>
+        <item>
+          <label>Flemmings bush</label>
+          <value>flemmings_bush</value>
+        </item>
+        <item>
+          <label>Flinders grass</label>
+          <value>flinders_grass</value>
+        </item>
+        <item>
+          <label>Fluffy Gomphrena</label>
+          <value>fluffy_gomphrena</value>
+        </item>
+        <item>
+          <label>Forage sorghum</label>
+          <value>forage_sorghum</value>
+        </item>
+        <item>
+          <label>Forbes</label>
+          <value>forbes</value>
+        </item>
+        <item>
+          <label>Forest Bluegrass</label>
+          <value>forest_bluegrass</value>
+        </item>
+        <item>
+          <label>Fringed glycine</label>
+          <value>frindge_glycine</value>
+        </item>
+        <item>
+          <label>Galvanised Burr</label>
+          <value>galvanised_burr</value>
+        </item>
+        <item>
+          <label>Gamba Grass</label>
+          <value>gamba_grass</value>
+        </item>
+        <item>
+          <label>Gatton Panic</label>
+          <value>gatton_panic</value>
+        </item>
+        <item>
+          <label>Georgina Lucerne</label>
+          <value>georgina_lucerne</value>
+        </item>
+        <item>
+          <label>Geranium</label>
+          <value>geranium</value>
+        </item>
+        <item>
+          <label>Giathead burr</label>
+          <value>giathead_burr</value>
+        </item>
+        <item>
+          <label>Gidgee burr</label>
+          <value>gidgee_burr</value>
+        </item>
+        <item>
+          <label>Goathead burr</label>
+          <value>goathead_burr</value>
+        </item>
+        <item>
+          <label>Golden beard grass</label>
+          <value>golden_beard_grass</value>
+        </item>
+        <item>
+          <label>Green Panic</label>
+          <value>green_panic</value>
+        </item>
+        <item>
+          <label>Hairy Panic</label>
+          <value>hairy_panic</value>
+        </item>
+        <item>
+          <label>Herbages</label>
+          <value>herbages</value>
+        </item>
+        <item>
+          <label>Hoop Mitchell</label>
+          <value>hoop_mitchell</value>
+        </item>
+        <item>
+          <label>Humidicola Tully</label>
+          <value>humidicola_tully</value>
+        </item>
+        <item>
+          <label>Indian couch</label>
+          <value>indian_couch</value>
+        </item>
+        <item>
+          <label>Italian Ryegrass</label>
+          <value>italian_ryegrass</value>
+        </item>
+        <item>
+          <label>Joyweed</label>
+          <value>joyweed</value>
+        </item>
+        <item>
+          <label>Kangaroo grass</label>
+          <value>kangaroo_grass</value>
+        </item>
+        <item>
+          <label>Kerosine grass</label>
+          <value>kerosine_grass</value>
+        </item>
+        <item>
+          <label>Kikuyu</label>
+          <value>kikuyu</value>
+        </item>
+        <item>
+          <label>Leaf Litter</label>
+          <value>leaf_litter</value>
+        </item>
+        <item>
+          <label>Limestone bottlewasher</label>
+          <value>limestone_bottlewasher</value>
+        </item>
+        <item>
+          <label>Liquiorice bush</label>
+          <value>liquiorice_bush</value>
+        </item>
+        <item>
+          <label>Litter and Bare</label>
+          <value>bare_litter</value>
+        </item>
+        <item>
+          <label>Long spine sclerolena</label>
+          <value>long_spine_sclerolena</value>
+        </item>
+        <item>
+          <label>Love grass</label>
+          <value>love_grass</value>
+        </item>
+        <item>
+          <label>Lovegrass species</label>
+          <value>lovegrass_species</value>
+        </item>
+        <item>
+          <label>Low-THC Hemp</label>
+          <value>hemp</value>
+        </item>
+        <item>
+          <label>Lucerne</label>
+          <value>lucerne</value>
+        </item>
+        <item>
+          <label>Lucerne Mix</label>
+          <value>lucerne_mix</value>
+        </item>
+        <item>
+          <label>Medic</label>
+          <value>medic</value>
+        </item>
+        <item>
+          <label>Mekong Cresantha</label>
+          <value>mekong_cresantha</value>
+        </item>
+        <item>
+          <label>Millet</label>
+          <value>millet</value>
+        </item>
+        <item>
+          <label>Mitchell Grass Species</label>
+          <value>mitchell_grass_sp</value>
+        </item>
+        <item>
+          <label>Mixed</label>
+          <value>mixed</value>
+        </item>
+        <item>
+          <label>Mulga Grass</label>
+          <value>mulga_grass</value>
+        </item>
+        <item>
+          <label>Mulla Mulla</label>
+          <value>mulla_mulla</value>
+        </item>
+        <item>
+          <label>Munyeroo</label>
+          <value>munyeroo</value>
+        </item>
+        <item>
+          <label>Nardoo</label>
+          <value>nardoo</value>
+        </item>
+        <item>
+          <label>Native</label>
+          <value>native</value>
+        </item>
+        <item>
+          <label>Native Couch</label>
+          <value>native_couch</value>
+        </item>
+        <item>
+          <label>Native jute</label>
+          <value>native_jute</value>
+        </item>
+        <item>
+          <label>Native millet</label>
+          <value>native_millet</value>
+        </item>
+        <item>
+          <label>Native sorghum</label>
+          <value>native_sorghum</value>
+        </item>
+        <item>
+          <label>Neptunia</label>
+          <value>neptunia</value>
+        </item>
+        <item>
+          <label>Nut grass</label>
+          <value>nut_grass</value>
+        </item>
+        <item>
+          <label>Oats</label>
+          <value>oats</value>
+        </item>
+        <item>
+          <label>Onion Weed</label>
+          <value>onion_weed</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>other_</value>
+        </item>
+        <item>
+          <label>Paper Onion Vine</label>
+          <value>paper_onion_vine</value>
+        </item>
+        <item>
+          <label>Parakeelya</label>
+          <value>parakeelya</value>
+        </item>
+        <item>
+          <label>Patterson�s Curse</label>
+          <value>pattersons_curse</value>
+        </item>
+        <item>
+          <label>Pea bush</label>
+          <value>pea_bush</value>
+        </item>
+        <item>
+          <label>Peach vine</label>
+          <value>peach_vine</value>
+        </item>
+        <item>
+          <label>Pepper grass</label>
+          <value>pepper_grass</value>
+        </item>
+        <item>
+          <label>Perennial grass sp</label>
+          <value>perennial_grass_sp</value>
+        </item>
+        <item>
+          <label>Perennial Ryegrass</label>
+          <value>perennial_ryegrass</value>
+        </item>
+        <item>
+          <label>Phalaris</label>
+          <value>phalaris</value>
+        </item>
+        <item>
+          <label>Phalaris Mix</label>
+          <value>phalaris_mix</value>
+        </item>
+        <item>
+          <label>Pigweed</label>
+          <value>pigweed</value>
+        </item>
+        <item>
+          <label>Plainsgrass</label>
+          <value>plainsgrass</value>
+        </item>
+        <item>
+          <label>Plume Sorghum</label>
+          <value>plume_sorghum</value>
+        </item>
+        <item>
+          <label>Premier Digit</label>
+          <value>premier_digit</value>
+        </item>
+        <item>
+          <label>Purple joy weed</label>
+          <value>purple_joy_weed</value>
+        </item>
+        <item>
+          <label>Purple pigeon</label>
+          <value>purple_pigeon</value>
+        </item>
+        <item>
+          <label>Queensland blue grass</label>
+          <value>qld_blue_grass</value>
+        </item>
+        <item>
+          <label>Raddish</label>
+          <value>raddish</value>
+        </item>
+        <item>
+          <label>Rape</label>
+          <value>rape</value>
+        </item>
+        <item>
+          <label>Red Grass</label>
+          <value>native_red_grass</value>
+        </item>
+        <item>
+          <label>Red Natal species</label>
+          <value>red_natal_sp</value>
+        </item>
+        <item>
+          <label>Rhodes grass</label>
+          <value>rhodes_grass</value>
+        </item>
+        <item>
+          <label>Rhyncosia</label>
+          <value>rhyncosia</value>
+        </item>
+        <item>
+          <label>Rolley polly shrub</label>
+          <value>rolley_polly_shrub</value>
+        </item>
+        <item>
+          <label>Rye-Mix</label>
+          <value>rye_mix</value>
+        </item>
+        <item>
+          <label>Ryegrass</label>
+          <value>ryegrass</value>
+        </item>
+        <item>
+          <label>Ryncosia</label>
+          <value>rhyncosia</value>
+        </item>
+        <item>
+          <label>Sabi grass</label>
+          <value>sabi_grass</value>
+        </item>
+        <item>
+          <label>Sclerolena species</label>
+          <value>sclerolena_sp</value>
+        </item>
+        <item>
+          <label>Sclerolinas</label>
+          <value>sclerolinas</value>
+        </item>
+        <item>
+          <label>Scrubby Stylo</label>
+          <value>scrubby_stylo</value>
+        </item>
+        <item>
+          <label>Seca</label>
+          <value>seca</value>
+        </item>
+        <item>
+          <label>Sedge grass</label>
+          <value>sedge_grass</value>
+        </item>
+        <item>
+          <label>Sedge species</label>
+          <value>sedge_sp</value>
+        </item>
+        <item>
+          <label>Sensitive Plant</label>
+          <value>sensitive_plant</value>
+        </item>
+        <item>
+          <label>Shot Grass</label>
+          <value>shot_grass</value>
+        </item>
+        <item>
+          <label>Sida species</label>
+          <value>sida_sp</value>
+        </item>
+        <item>
+          <label>Signal Grass</label>
+          <value>signal_grass</value>
+        </item>
+        <item>
+          <label>Silk Sorghum</label>
+          <value>silk_sorgham</value>
+        </item>
+        <item>
+          <label>Silky Browntop</label>
+          <value>silky_browntop</value>
+        </item>
+        <item>
+          <label>Silver Grass</label>
+          <value>silver_grass</value>
+        </item>
+        <item>
+          <label>Soda bush</label>
+          <value>soda_bush</value>
+        </item>
+        <item>
+          <label>Soda bush</label>
+          <value>slender_chloris</value>
+        </item>
+        <item>
+          <label>Soft Rolly Polly</label>
+          <value>soft_rolly_polly</value>
+        </item>
+        <item>
+          <label>Sorghum</label>
+          <value>sorghum</value>
+        </item>
+        <item>
+          <label>Spinifex</label>
+          <value>spinifex</value>
+        </item>
+        <item>
+          <label>Spurge</label>
+          <value>spurge</value>
+        </item>
+        <item>
+          <label>Stipa species</label>
+          <value>stipa_sp</value>
+        </item>
+        <item>
+          <label>Strawberry Clover</label>
+          <value>strawberry_clover</value>
+        </item>
+        <item>
+          <label>Stylo</label>
+          <value>stylo</value>
+        </item>
+        <item>
+          <label>Sub Clover</label>
+          <value>sub_clover</value>
+        </item>
+        <item>
+          <label>Sultan Annual Rye</label>
+          <value>sultan_annual_rye</value>
+        </item>
+        <item>
+          <label>Summer grass</label>
+          <value>summer_grass</value>
+        </item>
+        <item>
+          <label>Sunflower daisy</label>
+          <value>sunflower_daisy</value>
+        </item>
+        <item>
+          <label>Switchgrass (panicum native)</label>
+          <value>switchgrass_native</value>
+        </item>
+        <item>
+          <label>Tar vine</label>
+          <value>tar_vine</value>
+        </item>
+        <item>
+          <label>Three awn species</label>
+          <value>three_awn_sp</value>
+        </item>
+        <item>
+          <label>Tick weed</label>
+          <value>tick_weed</value>
+        </item>
+        <item>
+          <label>Tillage Raddish</label>
+          <value>tillage_raddish</value>
+        </item>
+        <item>
+          <label>Triticale</label>
+          <value>triticale</value>
+        </item>
+        <item>
+          <label>Tropical species</label>
+          <value>tropical_spp</value>
+        </item>
+        <item>
+          <label>Tully</label>
+          <value>tully</value>
+        </item>
+        <item>
+          <label>Turnip</label>
+          <value>turnip</value>
+        </item>
+        <item>
+          <label>Unknown species</label>
+          <value>unknown_species</value>
+        </item>
+        <item>
+          <label>Urochloa</label>
+          <value>urochloa</value>
+        </item>
+        <item>
+          <label>Veldt Grass</label>
+          <value>veldt_grass</value>
+        </item>
+        <item>
+          <label>Verbina</label>
+          <value>verbena</value>
+        </item>
+        <item>
+          <label>Verbine</label>
+          <value>verbine</value>
+        </item>
+        <item>
+          <label>Vetch</label>
+          <value>vetch</value>
+        </item>
+        <item>
+          <label>Wallaby Grass</label>
+          <value>native_wallaby_grass</value>
+        </item>
+        <item>
+          <label>Waltheria</label>
+          <value>waltheria</value>
+        </item>
+        <item>
+          <label>Wanderie</label>
+          <value>wanderie</value>
+        </item>
+        <item>
+          <label>Weeping Grass</label>
+          <value>microleena_weeping_grass</value>
+        </item>
+        <item>
+          <label>Weeping Mitchell</label>
+          <value>weeping_mitchell</value>
+        </item>
+        <item>
+          <label>Wheat</label>
+          <value>wheat</value>
+        </item>
+        <item>
+          <label>White Clover</label>
+          <value>white_clover</value>
+        </item>
+        <item>
+          <label>White speargrass</label>
+          <value>white_speargrass</value>
+        </item>
+        <item>
+          <label>Whitegrass</label>
+          <value>whitegrass</value>
+        </item>
+        <item>
+          <label>Wild rice</label>
+          <value>wild_rice</value>
+        </item>
+        <item>
+          <label>Windmill Grass</label>
+          <value>windmaill_grass</value>
+        </item>
+        <item>
+          <label>Winter Grass</label>
+          <value>winter_grass</value>
+        </item>
+        <item>
+          <label>Wire grass species</label>
+          <value>wire_grass_sp</value>
+        </item>
+        <item>
+          <label>Wooly Butt</label>
+          <value>wooly_butt</value>
+        </item>
+        <item>
+          <label>Wooly Copper burr</label>
+          <value>wooly_copper_burr</value>
+        </item>
+        <item>
+          <label>Wooly Oat</label>
+          <value>wooly_oat</value>
+        </item>
+        <item>
+          <label>Wynn cassia</label>
+          <value>wynn_cassia</value>
+        </item>
+        <item>
+          <label>Zig Zag grass</label>
+          <value>zig_zag_grass</value>
+        </item>
+      </select1>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pasture_information/sub_dominant_species">
+        <label>Sub-dominant Species</label>
+        <hint>&lt;p&gt;Free text for multiple pasture names (seperate with comma)&lt;/p&gt;</hint>
+      </input>
+      <range ref="/Cibo___Pasture_Biomass_Collector/pasture_information/unpalatable_species_" start="0" end="100" step="5">
+        <label>Unpalatable Species (%)</label>
+        <hint>&lt;p&gt;Percentage of Total DM that is Unpalatable Species (Average of Site)&lt;/p&gt;</hint>
+      </range>
+      <range ref="/Cibo___Pasture_Biomass_Collector/pasture_information/unpalatable_3p_species_" start="0" end="100" step="5">
+        <label>Unpalatable 3P Species (%)</label>
+        <hint>&lt;p&gt;Percentage of Total DM that is old, rank 3P biomass (Average of site)&lt;/p&gt;</hint>
+      </range>
+      <range ref="/Cibo___Pasture_Biomass_Collector/pasture_information/dry_matter_average" start="0" end="100" step="5">
+        <label>Average Dry Matter (%) for Transect</label>
+        <hint>&lt;p&gt;As estimated from previous drying process (Hay should be &amp;gt;85%DM, All Green ~20-30%DM)&lt;/p&gt;</hint>
+      </range>
+      <range ref="/Cibo___Pasture_Biomass_Collector/pasture_information/green_fraction_average" start="0" end="100" step="5">
+        <label>Average Green Fraction (%)</label>
+        <hint>&lt;p&gt;Percentage Green (Average of Transect)&lt;/p&gt;</hint>
+      </range>
+      <range ref="/Cibo___Pasture_Biomass_Collector/pasture_information/average_groundcover_percentage" start="0" end="100" step="5">
+        <label>Average Ground-cover (%)</label>
+        <hint>&lt;p&gt;Percentage Ground-cover (Average of Transect)&lt;/p&gt;</hint>
+      </range>
+    </group>
+    <group appearance="minimal compact" ref="/Cibo___Pasture_Biomass_Collector/land_information">
+      <label>Land Condition</label>
+      <select1 appearance="autocomplete" ref="/Cibo___Pasture_Biomass_Collector/land_information/land_condition">
+        <label>Land Condition (ABCD)</label>
+        <hint>&lt;p&gt;Please provide a Condition class (ABCD) for the landscape&lt;/p&gt;</hint>
+        <item>
+          <label>Class A</label>
+          <value>a_</value>
+        </item>
+        <item>
+          <label>Class AB</label>
+          <value>a_b_</value>
+        </item>
+        <item>
+          <label>Class B</label>
+          <value>b_</value>
+        </item>
+        <item>
+          <label>Class BC</label>
+          <value>b_c_</value>
+        </item>
+        <item>
+          <label>Class C</label>
+          <value>c_</value>
+        </item>
+        <item>
+          <label>Class CD</label>
+          <value>c_d_</value>
+        </item>
+        <item>
+          <label>Class D</label>
+          <value>d_</value>
+        </item>
+      </select1>
+      <select1 appearance="autocomplete" ref="/Cibo___Pasture_Biomass_Collector/land_information/soil_condition">
+        <label>Soil Condition (ABCD)</label>
+        <hint>&lt;p&gt;Please provide a Condition class (ABCD) for surrounding soils&lt;/p&gt;</hint>
+        <item>
+          <label>Class A</label>
+          <value>a_</value>
+        </item>
+        <item>
+          <label>Class AB</label>
+          <value>a_b_</value>
+        </item>
+        <item>
+          <label>Class B</label>
+          <value>b_</value>
+        </item>
+        <item>
+          <label>Class BC</label>
+          <value>b_c_</value>
+        </item>
+        <item>
+          <label>Class C</label>
+          <value>c_</value>
+        </item>
+        <item>
+          <label>Class CD</label>
+          <value>c_d_</value>
+        </item>
+        <item>
+          <label>Class D</label>
+          <value>d_</value>
+        </item>
+      </select1>
+      <select1 appearance="autocomplete" ref="/Cibo___Pasture_Biomass_Collector/land_information/plant_condition">
+        <label>Plant Condition (ABCD)</label>
+        <hint>&lt;p&gt;Please provide a Condition class (ABCD) for the surrounding plants&lt;/p&gt;</hint>
+        <item>
+          <label>Class A</label>
+          <value>a_</value>
+        </item>
+        <item>
+          <label>Class AB</label>
+          <value>a_b_</value>
+        </item>
+        <item>
+          <label>Class B</label>
+          <value>b_</value>
+        </item>
+        <item>
+          <label>Class BC</label>
+          <value>b_c_</value>
+        </item>
+        <item>
+          <label>Class C</label>
+          <value>c_</value>
+        </item>
+        <item>
+          <label>Class CD</label>
+          <value>c_d_</value>
+        </item>
+        <item>
+          <label>Class D</label>
+          <value>d_</value>
+        </item>
+      </select1>
+    </group>
+    <input appearance="multiline" ref="/Cibo___Pasture_Biomass_Collector/comments">
+      <label>Comments</label>
+    </input>
+    <input ref="/Cibo___Pasture_Biomass_Collector/note_submit">
+      <label>&lt;b&gt;&lt;font color="blue"&gt;CLICK THE TICK (BOTTOM RIGHT OF FORM) TO SUBMIT RECORDS&lt;/font&gt;&lt;/b&gt;</label>
+      <hint>&lt;p&gt;Click the 'TICK' located bottom right of form to submit the records&lt;/p&gt;</hint>
+    </input>
+    <group appearance="minimal compact" ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data">
+      <label>Auto-Filled (read only)</label>
+      <input appearance="hidden" ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/hectare_conversion">
+        <label>Conversion Factor (for Wet Weights)</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/field_tsdm_variance">
+        <label>Transect Average TSDM Variance</label>
+        <hint>&lt;p&gt;Transect Field Average TSDM calculated variance &lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/field_tsdm_deviation">
+        <label>Transect Average TSDM Deviation</label>
+        <hint>&lt;p&gt;Transect Field Average TSDM calculated Standard Deviation&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/start_time">
+        <label>Start Time</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_image_gps">
+        <label>Transect Image GPS</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_sum_y">
+        <label>Quadrat Count (median)</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_sum_x">
+        <label>Quadrat Count (median)</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_mid_y">
+        <label>Transect Mid Lat</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/quadrat_gps_mid_x">
+        <label>Transect Mid Long</label>
+      </input>
+      <select1 ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_status">
+        <label>Transect Status</label>
+        <hint>&lt;p&gt;status related to calibration purpose&lt;/p&gt;</hint>
+        <item>
+          <label>Not Using</label>
+          <value>not_used</value>
+        </item>
+        <item>
+          <label>Ready for Calibration</label>
+          <value>ready</value>
+        </item>
+      </select1>
+      <input esri:style="method=vertex" ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_start">
+        <label>Transect Start (as mid-point)</label>
+        <hint>&lt;p&gt;automatically calculated based on quadrant locations&lt;/p&gt;</hint>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_end_y">
+        <label>Transect End Lat</label>
+      </input>
+      <input ref="/Cibo___Pasture_Biomass_Collector/pre_fill_data/transect_end_x">
+        <label>Transect End Long</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

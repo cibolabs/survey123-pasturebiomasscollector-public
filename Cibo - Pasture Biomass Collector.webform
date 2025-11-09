@@ -1,0 +1,8 @@
+{
+  "error": {
+    "code": -1,
+    "details": [],
+    "message": "[xmldom warning]\tUnicode replacement character detected, source encoding issues? @#[line:0,col:undefined]"
+  },
+  "success": false
+}

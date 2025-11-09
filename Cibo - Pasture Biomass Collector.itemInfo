@@ -1,0 +1,70 @@
+{
+    "access": "public",
+    "accessInformation": null,
+    "advancedSettings": null,
+    "apiToken1ExpirationDate": -1,
+    "apiToken2ExpirationDate": -1,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "classification": null,
+    "commentsEnabled": true,
+    "created": 1615334985000,
+    "culture": "en-au",
+    "description": "\n<p style=' margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'>Walk to transect start THEN click 'Collect' at location.</p>\n<p style='-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'><br /></p>",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "cd571d5311fc4c869c5088673e0a40b5",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "lastViewed": 1746504000000,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1746508216000,
+    "name": "Cibo_-_Pasture_Biomass_Collector.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 1625,
+    "orgId": "Jufq6nv0RVQMYf0J",
+    "owner": "nikhenry_CiboLabs",
+    "ownerFolder": "366232b185a44d719c927db173f71b67",
+    "properties": {
+        "connectVersion": "3.22.49",
+        "isVersionLocked": false
+    },
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 68,
+    "screenshots": [
+    ],
+    "size": 84771,
+    "snippet": "The Pasture Biomass Collector App is a simple mobile data collection app for undertaking rapid pasture assessments in the paddock",
+    "spatialReference": null,
+    "subInfo": 0,
+    "tags": [
+        "pasture biomass",
+        "collector"
+    ],
+    "thumbnail": "thumbnail/Cibo_PastureBiomassCollector_icon.png",
+    "title": "Cibo Labs - Pasture Biomass Collector",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "requireUpdate",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

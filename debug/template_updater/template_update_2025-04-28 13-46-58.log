@@ -1,0 +1,29 @@
+2025-04-28 13:46:58,946 INFO 5666 
+xlsform_template_updater.py xlsform_template_updater main 483 
+Script starting at 2025-04-28 13:46:58.945710
+
+2025-04-28 13:46:58,951 INFO 5671 
+xlsform_template_updater.py xlsform_template_updater main 502 
+Made a backup of the XLSForm in:
+C:\Users\nikhenry\ArcGIS\My Survey Designs\Cibo - Pasture Biomass Collector\debug\template_updater\Cibo - Pasture Biomass Collector_2025_04_28_13_46_58.xlsx
+
+2025-04-28 13:46:58,953 INFO 5673 
+xlsform_template_updater.py xlsform_template_updater main 511 
+Currently working on survey: Cibo - Pasture Biomass Collector
+
+2025-04-28 13:47:03,677 INFO 10396 
+xlsform_template_updater.py xlsform_template_updater update_survey 408 
+Completed updating survey worksheet
+
+2025-04-28 13:47:05,054 INFO 11774 
+xlsform_template_updater.py xlsform_template_updater update_survey 408 
+Completed updating choices worksheet
+
+2025-04-28 13:47:05,147 INFO 11866 
+xlsform_template_updater.py xlsform_template_updater update_survey 408 
+Completed updating settings worksheet
+
+2025-04-28 13:47:05,797 INFO 12516 
+xlsform_template_updater.py xlsform_template_updater main 517 
+XLSForm upgrade complete
+
